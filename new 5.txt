@@ -1,598 +1,599 @@
-comment	交易日	day1	day2	day3																			
-comment	20180326	20180326	20180327	20180328																			
-comment	投资者信息																						
-comment	投资者代码	投资单元	资金账号	 币种代码	经纪公司	交易编码																	
-comment	6001	B00101	6001	CNY	9999	50010001																	
-comment	6001	B00102	6001	CNY	9999	50010002																	
-comment	资金账号																						
-comment	投资者代码	资金账号	币种代码																				
-comment	6001	6001	CNY																				
-comment	6001	6001	HKD																				
-comment	6001	6001	USD																				
-comment	交易所资金账号																						
-comment	交易所代码	交易所账号	币种代码																				
-comment	CZCE	99990201	CNY																				
-comment	CZCE	99990203	HKD																				
-comment	CZCE	99990202	USD																				
-comment	产品合约										0：期货，1：期权												
-comment	交易所	合约	品种	合约乘数	到期日	2.00000 	看涨看跌0：涨，1：跌	标的期货合约	执行价格	是否特殊品种:0正常,1 特殊	品种类型	基础商品乘数											
-comment	CZCE	SR807	SR	10.00000 	20180328	1	9	SR807		0	0	1											
-comment	CZCE	SR809	SR	10.00000 	20180333	1	9	SR809		0	0	1											
-comment	CZCE	OI811	OI	10.00000 	20180333	1	9	OI811		0	0	1											
-comment	CZCE	PTA807	PTA	5.00000 	20180328	1	9	PTA807		1	0	1											
-comment	CZCE	PTA809	PTA	5.00000 	20180333	1	9	PTA809		1	0	1											
-comment	CZCE	PTA807C6500	PTAC	5.00000 	20180328	2	0	PTA807	6500		1	1											
-comment	CZCE	PTA807P6200	PTAP	5.00000 	20180328	2	1	PTA807	6200		1	1											
-comment	CZCE	PTA807P6500	PTAP	5.00000 	20180328	2	1	PTA807	6500		1	1											
-comment	CZCE	SR807C6500	SRC	10.00000 	20180327	2	0	SR807	6500	0	1	1											
-comment	CZCE	SR807P6500	SRP	10.00000 	20180327	2	1	SR807	6500	0	1	1											
-comment	CZCE	SR807P6400	SRP	10.00000 	20180327	2	1	SR807	6400	0	1	1											
-comment	CZCE	SR809C6600	SRC	10.00000 	20180332	2	0	SR809	6600	0	1	1											
-comment	CZCE	SR809C6500	SRC	10.00000 	20180327		0	SR809	6500	0	1	1											
-comment	交易所	组合合约	组合类型	组合方向	左腿合约	左腿方向	右腿合约	右腿方向	组合类型														
-comment	CZCE	SR807&SR809	同品种跨期	0 	SR807	0 	SR809	1	SPD														
-comment	CZCE	SR807&SR809	同品种跨期	1 	SR807	1 	SR809	0	SPD														
-comment	CZCE	SR807&OI811	不同品种跨期	1 	SR807	1 	OI811	1	SPD														
-comment	CZCE	SR807&OI811	不同品种跨期	1 	SR807	1 	OI811	0	SPD														
-comment	CZCE	SR807&SR807C6500	备兑看涨	0 	SR807	0 	SR807C6500	1	PRT														
-comment	CZCE	SR807&SR807P6500	备兑看跌	1 	SR807	1 	SR807P6500	1	PRT														
-comment	CZCE	PTA807&PTA807C6500	备兑看涨	0 	PTA807	0 	PTA807P6200	1	PRT														
-comment	CZCE	PTA807&PTA807C6500	备兑看跌	1 	PTA807	1 	PTA807P6200	1	PRT														
-comment	CZCE	SR809&SR809C6600	备兑看涨	0 	SR809	0 	SR809C6600	1	PRT														
-comment	CZCE	PTA807C6500&PTA807P6500	跨式	0 	PTA807P6200	0 	PTA807P6500	0	STD														
-comment	CZCE	PTA807C6500&PTA807P6500	跨式	1 	PTA807P6200	1 	PTA807P6500	1	STD														
-comment	CZCE	PTA807C6500&PTA807P6200	宽跨式	0 	PTA807P6200	0 	PTA807C6500	0	STG														
-comment	CZCE	PTA807C6500&PTA807P6200	宽跨式	1 	PTA807P6200	1 	PTA807C6500	1	STG														
-comment	CZCE	SR807C6500&SR807P6500	跨式	0 	SR807C6500	0 	SR807P6500	0	STD														
-comment	CZCE	SR807C6500&SR807P6500	跨式	1 	SR807C6500	1 	SR807P6500	1	STD														
-comment	CZCE	SR807C6500&SR807P6400	宽跨式	0 	SR807C6500	0 	SR807P6400	0	STG														
-comment	CZCE	SR807C6500&SR807P6400	宽跨式	1 	SR807C6500	1 	SR807P6400	1	STG														
-comment	CZCE	PTA807&PTA809	同品种跨期	0 	PTA807	0 	PTA809	1	SPD														
-comment	CZCE	PTA807&PTA809	同品种跨期	1 	PTA807	1 	PTA809	0	SPD														
-comment	交易所保证金率&投资者保证金率&投资者标的调整				合约&投机套保&买卖																		
-comment	交易所代码	合约代码	投机套保标志（投机1 套保3 做市商4）	多空方向（0多头1空头）	辅助列	交易所按金额	交易所按数	投资者按金额	投资者按手数	标的按金额	标的按手数												
-comment	CZCE	SR807	1	0	SR80710	0.04	4	0.05	5	0.01	1												
-comment	CZCE	SR807	1	1	SR80711	0.041	4.1	0.051	5.1	0.011	1.11												
-comment	CZCE	SR807	3	0	SR80730	0.042	4.2	0.052	5.2	0.012	1.12												
-comment	CZCE	SR807	3	1	SR80731	0.043	4.3	0.053	5.3	0.013	1.13												
-comment	CZCE	SR809	1	0	SR80910	0.04	4	0.05	5	0.01	1												
-comment	CZCE	SR809	1	1	SR80911	0.041	4.1	0.051	5.1	0.011	1.11												
-comment	CZCE	SR809	3	0	SR80930	0.042	4.2	0.052	5.2	0.012	1.12												
-comment	CZCE	SR809	3	1	SR80931	0.043	4.3	0.053	5.3	0.013	1.13												
-comment	CZCE	OI811	1	0	OI81110	0.04	4	0.05	5	0.01	1												
-comment	CZCE	OI811	1	1	OI81111	0.041	4.1	0.051	5.1	0.011	1.11												
-comment	CZCE	OI811	3	0	OI81130	0.042	4.2	0.052	5.2	0.012	1.12												
-comment	CZCE	OI811	3	1	OI81131	0.043	4.3	0.053	5.3	0.013	1.13												
-comment	CZCE	PTA807	1	0	PTA80710	0.04	4	0.05	5	0.01	1												
-comment	CZCE	PTA807	1	1	PTA80711	0.041	4.1	0.051	5.1	0.011	1.11												
-comment	CZCE	PTA807	3	0	PTA80730	0.042	4.2	0.052	5.2	0.012	1.12												
-comment	CZCE	PTA807	3	1	PTA80731	0.043	4.3	0.053	5.3	0.013	1.13												
-comment	CZCE	PTA809	1	0	PTA80910	0.04	4	0.05	5	0.01	1												
-comment	CZCE	PTA809	1	1	PTA80911	0.041	4.1	0.051	5.1	0.011	1.11												
-comment	CZCE	PTA809	3	0	PTA80930	0.042	4.2	0.052	5.2	0.012	1.12												
-comment	CZCE	PTA809	3	1	PTA80931	0.043	4.3	0.053	5.3	0.013	1.13												
-comment	期货：交易所手续费率&投资者手续费率																						
-comment	投资者代码	交易所代码	合约代码	投机套保标志	开平标志	辅助列	投资者按金额	投资者按手数	交易所按金额	交易所按手数 	投资者结算按金额	投资者结算按手数											
-comment	6001	CZCE	SR807	1 	0 	SR80710	0.000500 	5.000000 	0.000400 	4.000000 	0.0002	2											
-comment	6001	CZCE	SR807	1 	1 	SR80711	0.000400 	4.000000 	0.000300 	3.000000 	0.0002	2											
-comment	6001	CZCE	SR807	1 	2 	SR80712	0.000300 	3.000000 	0.000200 	2.000000 	0.0002	2											
-comment	6001	CZCE	SR807	1 	3 	SR80713	0.000200 	2.000000 	0.000100 	1.000000 	0.0002	2											
-comment	6001	CZCE	SR807	3 	0 	SR80730	0.000500 	5.000000 	0.000500 	5.000000 	0.0002	2											
-comment	6001	CZCE	SR807	3 	1 	SR80731	0.000400 	4.000000 	0.000400 	4.000000 	0.0002	2											
-comment	6001	CZCE	SR807	3 	2 	SR80732	0.000300 	3.000000 	0.000300 	3.000000 	0.0002	2											
-comment	6001	CZCE	SR807	3 	3 	SR80733	0.000200 	2.000000 	0.000200 	2.000000 	0.0002	2											
-comment	6001	CZCE	SR809	1 	0 	SR80910	0.000500 	5.000000 	0.000400 	4.000000 	0.0002	2											
-comment	6001	CZCE	SR809	1 	1 	SR80911	0.000400 	4.000000 	0.000300 	3.000000 	0.0002	2											
-comment	6001	CZCE	SR809	1 	2 	SR80912	0.000300 	3.000000 	0.000200 	2.000000 	0.0002	2											
-comment	6001	CZCE	SR809	1 	3 	SR80913	0.000200 	2.000000 	0.000100 	1.000000 	0.0002	2											
-comment	6001	CZCE	SR809	3 	0 	SR80930	0.000500 	5.000000 	0.000500 	5.000000 	0.000200 	2.000000 											
-comment	6001	CZCE	SR809	3 	1 	SR80931	0.000400 	4.000000 	0.000400 	4.000000 	0.000200 	2.000000 											
-comment	6001	CZCE	SR809	3 	2 	SR80932	0.000300 	3.000000 	0.000300 	3.000000 	0.000200 	2.000000 											
-comment	6001	CZCE	SR809	3 	3 	SR80933	0.000200 	2.000000 	0.000200 	2.000000 	0.000200 	2.000000 											
-comment	6001	CZCE	OI811	1 	0 	OI81110	0.000500 	5.000000 	0.000400 	4.000000 	0.0002	2											
-comment	6001	CZCE	OI811	1 	1 	OI81111	0.000400 	4.000000 	0.000300 	3.000000 	0.0002	2											
-comment	6001	CZCE	OI811	1 	2 	OI81112	0.000300 	3.000000 	0.000200 	2.000000 	0.0002	2											
-comment	6001	CZCE	OI811	1 	3 	OI81113	0.000200 	2.000000 	0.000100 	1.000000 	0.0002	2											
-comment	6001	CZCE	OI811	3 	0 	OI81130	0.000500 	5.000000 	0.000500 	5.000000 	0.000200 	2.000000 											
-comment	6001	CZCE	OI811	3 	1 	OI81131	0.000400 	4.000000 	0.000400 	4.000000 	0.000200 	2.000000 											
-comment	6001	CZCE	OI811	3 	2 	OI81132	0.000300 	3.000000 	0.000300 	3.000000 	0.000200 	2.000000 											
-comment	6001	CZCE	OI811	3 	3 	OI81133	0.000200 	2.000000 	0.000200 	2.000000 	0.000200 	2.000000 											
-comment	6001	CZCE	PTA807	1 	0 	PTA80710	0.000500 	5.000000 	0.000400 	4.000000 	0.0002	2											
-comment	6001	CZCE	PTA807	1 	1 	PTA80711	0.000400 	4.000000 	0.000300 	3.000000 	0.0002	2											
-comment	6001	CZCE	PTA807	1 	2 	PTA80712	0.000300 	3.000000 	0.000200 	2.000000 	0.0002	2											
-comment	6001	CZCE	PTA807	1 	3 	PTA80713	0.000200 	2.000000 	0.000100 	1.000000 	0.0002	2											
-comment	6001	CZCE	PTA807	3 	0 	PTA80730	0.000500 	5.000000 	0.000500 	5.000000 	0.000200 	2.000000 											
-comment	6001	CZCE	PTA807	3 	1 	PTA80731	0.000400 	4.000000 	0.000400 	4.000000 	0.000200 	2.000000 											
-comment	6001	CZCE	PTA807	3 	2 	PTA80732	0.000300 	3.000000 	0.000300 	3.000000 	0.000200 	2.000000 											
-comment	6001	CZCE	PTA807	3 	3 	PTA80733	0.000200 	2.000000 	0.000200 	2.000000 	0.000200 	2.000000 											
-comment	6001	CZCE	PTA809	1 	0 	PTA80910	0.000500 	5.000000 	0.000400 	4.000000 	0.0002	2											
-comment	6001	CZCE	PTA809	1 	1 	PTA80911	0.000400 	4.000000 	0.000300 	3.000000 	0.0002	2											
-comment	6001	CZCE	PTA809	1 	2 	PTA80912	0.000300 	3.000000 	0.000200 	2.000000 	0.0002	2											
-comment	6001	CZCE	PTA809	1 	3 	PTA80913	0.000200 	2.000000 	0.000100 	1.000000 	0.0002	2											
-comment	6001	CZCE	PTA809	3 	0 	PTA80930	0.000500 	5.000000 	0.000500 	5.000000 	0.000200 	2.000000 											
-comment	6001	CZCE	PTA809	3 	1 	PTA80931	0.000400 	4.000000 	0.000400 	4.000000 	0.000200 	2.000000 											
-comment	6001	CZCE	PTA809	3 	2 	PTA80932	0.000300 	3.000000 	0.000300 	3.000000 	0.000200 	2.000000 											
-comment	6001	CZCE	PTA809	3 	3 	PTA80933	0.000200 	2.000000 	0.000200 	2.000000 	0.000200 	2.000000 											
-comment	期权：交易所手续费率&投资者手续费率				4: 执行5：履约																		
-comment	投资者代码	交易所代码	合约代码	投机套保标志	开平标志	辅助列	投资者手续费率按金额	投资者手续费率按手数	交易所手续费率按金额	交易所手续费率按手数	投资者结算按金额	投资者结算按手数											
-comment	6001	CZCE	SR807C6500	1 	0 	SR807C650010	0.0005	5	0.0004	4	0.0002	2											
-comment	6001	CZCE	SR807C6500	1 	1 	SR807C650011	0.0004	4	0.0003	3	0.0002	2											
-comment	6001	CZCE	SR807C6500	1 	3 	SR807C650013	0.0002	2	0.0001	1	0.0002	2											
-comment	6001	CZCE	SR807C6500	1 	4 	SR807C650014	0.00042	4.2	0.00032	3.2	0.0002	2											
-comment	6001	CZCE	SR807C6500	1 	5 	SR807C650015	0.00045	4.5	0.00035	3.5	0.0002	2											
-comment	6001	CZCE	SR807C6500	3 	0 	SR807C650030	0.0005	5	0.0005	5	0.0002	2											
-comment	6001	CZCE	SR807C6500	3 	1 	SR807C650031	0.0004	4	0.0004	4	0.0002	2											
-comment	6001	CZCE	SR807C6500	3 	3 	SR807C650033	0.0002	2	0.0002	2	0.0002	2											
-comment	6001	CZCE	SR807C6500	3 	4 	SR807C650034	0.00042	4.2	0.00042	4.2	0.0002	2											
-comment	6001	CZCE	SR807C6500	3 	5 	SR807C650035	0.00045	4.5	0.00045	4.5	0.0002	2											
-comment	6001	CZCE	SR807P6500	1 	0 	SR807P650010	0.0005	5	0.0004	4	0.0002	2											
-comment	6001	CZCE	SR807P6500	1 	1 	SR807P650011	0.0004	4	0.0003	3	0.0002	2											
-comment	6001	CZCE	SR807P6500	1 	3 	SR807P650013	0.0002	2	0.0001	1	0.0002	2											
-comment	6001	CZCE	SR807P6500	1 	4 	SR807P650014	0.00042	4.2	0.00032	3.2	0.0002	2											
-comment	6001	CZCE	SR807P6500	1 	5 	SR807P650015	0.00045	4.5	0.00035	3.5	0.0002	2											
-comment	6001	CZCE	SR807P6500	3 	0 	SR807P650030	0.0005	5	0.0005	5	0.0002	2											
-comment	6001	CZCE	SR807P6500	3 	1 	SR807P650031	0.0004	4	0.0004	4	0.0002	2											
-comment	6001	CZCE	SR807P6500	3 	3 	SR807P650033	0.0002	2	0.0002	2	0.0002	2											
-comment	6001	CZCE	SR807P6500	3 	4 	SR807P650034	0.00042	4.2	0.00042	4.2	0.0002	2											
-comment	6001	CZCE	SR807P6500	3 	5 	SR807P650035	0.00045	4.5	0.00045	4.5	0.0002	2											
-comment	6001	CZCE	SR807P6400	1 	0 	SR807P640010	0.0005	5	0.0004	4	0.0002	2											
-comment	6001	CZCE	SR807P6400	1 	1 	SR807P640011	0.0004	4	0.0003	3	0.0002	2											
-comment	6001	CZCE	SR807P6400	1 	3 	SR807P640013	0.0002	2	0.0001	1	0.0002	2											
-comment	6001	CZCE	SR807P6400	1 	4 	SR807P640014	0.00042	4.2	0.00032	3.2	0.0002	2											
-comment	6001	CZCE	SR807P6400	1 	5 	SR807P640015	0.00045	4.5	0.00035	3.5	0.0002	2											
-comment	6001	CZCE	SR807P6400	3 	0 	SR807P640030	0.0005	5	0.0005	5	0.0002	2											
-comment	6001	CZCE	SR807P6400	3 	1 	SR807P640031	0.0004	4	0.0004	4	0.0002	2											
-comment	6001	CZCE	SR807P6400	3 	3 	SR807P640033	0.0002	2	0.0002	2	0.0002	2											
-comment	6001	CZCE	SR807P6400	3 	4 	SR807P640034	0.00042	4.2	0.00042	4.2	0.0002	2											
-comment	6001	CZCE	SR807P6400	3 	5 	SR807P640035	0.00045	4.5	0.00045	4.5	0.0002	2											
-comment	6001	CZCE	SR809C6600	1 	0 	SR809C660010	0.0005	5	0.0004	4	0.0002	2											
-comment	6001	CZCE	SR809C6600	1 	1 	SR809C660011	0.0004	4	0.0003	3	0.0002	2											
-comment	6001	CZCE	SR809C6600	1 	3 	SR809C660013	0.0002	2	0.0001	1	0.0002	2											
-comment	6001	CZCE	SR809C6600	1 	4 	SR809C660014	0.00042	4.2	0.00032	3.2	0.0002	2											
-comment	6001	CZCE	SR809C6600	1 	5 	SR809C660015	0.00045	4.5	0.00035	3.5	0.0002	2											
-comment	6001	CZCE	SR809C6600	3 	0 	SR809C660030	0.0005	5	0.0005	5	0.0002	2											
-comment	6001	CZCE	SR809C6600	3 	1 	SR809C660031	0.0004	4	0.0004	4	0.0002	2											
-comment	6001	CZCE	SR809C6600	3 	3 	SR809C660033	0.0002	2	0.0002	2	0.0002	2											
-comment	6001	CZCE	SR809C6600	3 	4 	SR809C660034	0.00042	4.2	0.00042	4.2	0.0002	2											
-comment	6001	CZCE	SR809C6600	3 	5 	SR809C660035	0.00045	4.5	0.00045	4.5	0.0002	2											
-comment	6001	CZCE	PTA807C6500	1 	0 	PTA807C650010	0.0005	5	0.0004	4	0.0002	2											
-comment	6001	CZCE	PTA807C6500	1 	1 	PTA807C650011	0.0004	4	0.0003	3	0.0002	2											
-comment	6001	CZCE	PTA807C6500	1 	3 	PTA807C650013	0.0002	2	0.0001	1	0.0002	2											
-comment	6001	CZCE	PTA807C6500	1 	4 	PTA807C650014	0.00042	4.2	0.00032	3.2	0.0002	2											
-comment	6001	CZCE	PTA807C6500	1 	5 	PTA807C650015	0.00045	4.5	0.00035	3.5	0.0002	2											
-comment	6001	CZCE	PTA807C6500	3 	0 	PTA807C650030	0.0005	5	0.0005	5	0.0002	2											
-comment	6001	CZCE	PTA807C6500	3 	1 	PTA807C650031	0.0004	4	0.0004	4	0.0002	2											
-comment	6001	CZCE	PTA807C6500	3 	3 	PTA807C650033	0.0002	2	0.0002	2	0.0002	2											
-comment	6001	CZCE	PTA807C6500	3 	4 	PTA807C650034	0.00042	4.2	0.00042	4.2	0.0002	2											
-comment	6001	CZCE	PTA807C6500	3 	5 	PTA807C650035	0.00045	4.5	0.00045	4.5	0.0002	2											
-comment	6001	CZCE	PTA807P6200	1 	0 	PTA807P620010	0.0005	5	0.0004	4	0.0002	2											
-comment	6001	CZCE	PTA807P6200	1 	1 	PTA807P620011	0.0004	4	0.0003	3	0.0002	2											
-comment	6001	CZCE	PTA807P6200	1 	3 	PTA807P620013	0.0002	2	0.0001	1	0.0002	2											
-comment	6001	CZCE	PTA807P6200	1 	4 	PTA807P620014	0.00042	4.2	0.00032	3.2	0.0002	2											
-comment	6001	CZCE	PTA807P6200	1 	5 	PTA807P620015	0.00045	4.5	0.00035	3.5	0.0002	2											
-comment	6001	CZCE	PTA807P6200	3 	0 	PTA807P620030	0.0005	5	0.0005	5	0.0002	2											
-comment	6001	CZCE	PTA807P6200	3 	1 	PTA807P620031	0.0004	4	0.0004	4	0.0002	2											
-comment	6001	CZCE	PTA807P6200	3 	3 	PTA807P620033	0.0002	2	0.0002	2	0.0002	2											
-comment	6001	CZCE	PTA807P6200	3 	4 	PTA807P620034	0.00042	4.2	0.00042	4.2	0.0002	2											
-comment	6001	CZCE	PTA807P6200	3 	5 	PTA807P620035	0.00045	4.5	0.00045	4.5	0.0002	2											
-comment	6001	CZCE	PTA807P6500	1 	0 	PTA807P650010	0.0005	5	0.0004	4	0.0002	2											
-comment	6001	CZCE	PTA807P6500	1 	1 	PTA807P650011	0.0004	4	0.0003	3	0.0002	2											
-comment	6001	CZCE	PTA807P6500	1 	3 	PTA807P650013	0.0002	2	0.0001	1	0.0002	2											
-comment	6001	CZCE	PTA807P6500	1 	4 	PTA807P650014	0.00042	4.2	0.00032	3.2	0.0002	2											
-comment	6001	CZCE	PTA807P6500	3 	5 	PTA807P650035	0.00045	4.5	0.00035	3.5	0.0002	2											
-comment	6001	CZCE	PTA807P6500	3 	0 	PTA807P650030	0.0005	5	0.0005	5	0.0002	2											
-comment	6001	CZCE	PTA807P6500	3 	1 	PTA807P650031	0.0004	4	0.0004	4	0.0002	2											
-comment	6001	CZCE	PTA807P6500	3 	3 	PTA807P650033	0.0002	2	0.0002	2	0.0002	2											
-comment	6001	CZCE	PTA807P6500	3 	4 	PTA807P650034	0.00042	4.2	0.00042	4.2	0.0002	2											
-comment	6001	CZCE	PTA807P6500	3 	5 	PTA807P650035	0.00045	4.5	0.00045	4.5	0.0002	2											
-comment	 结算参数																						
-comment	交易所结算参数设置	0:最后交易日收取				0：双边1：对锁	开仓3：开仓&行权																
+comment	交易日	day1	day2	day3																					
+comment	20180326	20180326	20180327	20180328																					
+comment	投资者信息																								
+comment	投资者代码	投资单元	资金账号	 币种代码	经纪公司	交易编码																			
+comment	6001	B00101	6001	CNY	9999	50010001																			
+comment	6001	B00102	6001	CNY	9999	50010002																			
+comment	资金账号																								
+comment	投资者代码	资金账号	币种代码																						
+comment	6001	6001	CNY																						
+comment	6001	6001	HKD																						
+comment	6001	6001	USD																						
+comment	交易所资金账号																								
+comment	交易所代码	交易所账号	币种代码																						
+comment	CZCE	99990201	CNY																						
+comment	CZCE	99990203	HKD																						
+comment	CZCE	99990202	USD																						
+comment	产品合约										0：期货，1：期权														
+comment	交易所	合约	品种	合约乘数	到期日	2.00000 	看涨看跌0：涨，1：跌	标的期货合约	执行价格	是否特殊品种:0正常,1 特殊	品种类型	基础商品乘数													
+comment	CZCE	SR807	SR	10.00000 	20180328	1	9	SR807		0	0	1													
+comment	CZCE	SR809	SR	10.00000 	20180333	1	9	SR809		0	0	1													
+comment	CZCE	OI811	OI	10.00000 	20180333	1	9	OI811		0	0	1													
+comment	CZCE	PTA807	PTA	5.00000 	20180328	1	9	PTA807		1	0	1													
+comment	CZCE	PTA809	PTA	5.00000 	20180333	1	9	PTA809		1	0	1													
+comment	CZCE	PTA807C6500	PTAC	5.00000 	20180328	2	0	PTA807	6500		1	1													
+comment	CZCE	PTA807P6200	PTAP	5.00000 	20180328	2	1	PTA807	6200		1	1													
+comment	CZCE	PTA807P6500	PTAP	5.00000 	20180328	2	1	PTA807	6500		1	1													
+comment	CZCE	SR807C6500	SRC	10.00000 	20180327	2	0	SR807	6500	0	1	1													
+comment	CZCE	SR807P6500	SRP	10.00000 	20180327	2	1	SR807	6500	0	1	1													
+comment	CZCE	SR807P6400	SRP	10.00000 	20180327	2	1	SR807	6400	0	1	1													
+comment	CZCE	SR809C6600	SRC	10.00000 	20180332	2	0	SR809	6600	0	1	1													
+comment	CZCE	SR809C6500	SRC	10.00000 	20180327		0	SR809	6500	0	1	1													
+comment	交易所	组合合约	组合类型	组合方向	左腿合约	左腿方向	右腿合约	右腿方向	组合类型																
+comment	CZCE	SR807&SR809	同品种跨期	0 	SR807	0 	SR809	1	SPD																
+comment	CZCE	SR807&SR809	同品种跨期	1 	SR807	1 	SR809	0	SPD																
+comment	CZCE	SR807&OI811	不同品种跨期	1 	SR807	1 	OI811	1	SPD																
+comment	CZCE	SR807&OI811	不同品种跨期	1 	SR807	1 	OI811	0	SPD																
+comment	CZCE	SR807&SR807C6500	备兑看涨	0 	SR807	0 	SR807C6500	1	PRT																
+comment	CZCE	SR807&SR807P6500	备兑看跌	1 	SR807	1 	SR807P6500	1	PRT																
+comment	CZCE	PTA807&PTA807C6500	备兑看涨	0 	PTA807	0 	PTA807P6200	1	PRT																
+comment	CZCE	PTA807&PTA807C6500	备兑看跌	1 	PTA807	1 	PTA807P6200	1	PRT																
+comment	CZCE	SR809&SR809C6600	备兑看涨	0 	SR809	0 	SR809C6600	1	PRT																
+comment	CZCE	PTA807C6500&PTA807P6500	跨式	0 	PTA807P6200	0 	PTA807P6500	0	STD																
+comment	CZCE	PTA807C6500&PTA807P6500	跨式	1 	PTA807P6200	1 	PTA807P6500	1	STD																
+comment	CZCE	PTA807C6500&PTA807P6200	宽跨式	0 	PTA807P6200	0 	PTA807C6500	0	STG																
+comment	CZCE	PTA807C6500&PTA807P6200	宽跨式	1 	PTA807P6200	1 	PTA807C6500	1	STG																
+comment	CZCE	SR807C6500&SR807P6500	跨式	0 	SR807C6500	0 	SR807P6500	0	STD																
+comment	CZCE	SR807C6500&SR807P6500	跨式	1 	SR807C6500	1 	SR807P6500	1	STD																
+comment	CZCE	SR807C6500&SR807P6400	宽跨式	0 	SR807C6500	0 	SR807P6400	0	STG																
+comment	CZCE	SR807C6500&SR807P6400	宽跨式	1 	SR807C6500	1 	SR807P6400	1	STG																
+comment	CZCE	PTA807&PTA809	同品种跨期	0 	PTA807	0 	PTA809	1	SPD																
+comment	CZCE	PTA807&PTA809	同品种跨期	1 	PTA807	1 	PTA809	0	SPD																
+comment	交易所保证金率&投资者保证金率&投资者标的调整				合约&投机套保&买卖																				
+comment	交易所代码	合约代码	投机套保标志（投机1 套保3 做市商4）	多空方向（0多头1空头）	辅助列	交易所按金额	交易所按数	投资者按金额	投资者按手数	标的按金额	标的按手数														
+comment	CZCE	SR807	1	0	SR80710	0.04	4	0.05	5	0.01	1														
+comment	CZCE	SR807	1	1	SR80711	0.041	4.1	0.051	5.1	0.011	1.11														
+comment	CZCE	SR807	3	0	SR80730	0.042	4.2	0.052	5.2	0.012	1.12														
+comment	CZCE	SR807	3	1	SR80731	0.043	4.3	0.053	5.3	0.013	1.13														
+comment	CZCE	SR809	1	0	SR80910	0.04	4	0.05	5	0.01	1														
+comment	CZCE	SR809	1	1	SR80911	0.041	4.1	0.051	5.1	0.011	1.11														
+comment	CZCE	SR809	3	0	SR80930	0.042	4.2	0.052	5.2	0.012	1.12														
+comment	CZCE	SR809	3	1	SR80931	0.043	4.3	0.053	5.3	0.013	1.13														
+comment	CZCE	OI811	1	0	OI81110	0.04	4	0.05	5	0.01	1														
+comment	CZCE	OI811	1	1	OI81111	0.041	4.1	0.051	5.1	0.011	1.11														
+comment	CZCE	OI811	3	0	OI81130	0.042	4.2	0.052	5.2	0.012	1.12														
+comment	CZCE	OI811	3	1	OI81131	0.043	4.3	0.053	5.3	0.013	1.13														
+comment	CZCE	PTA807	1	0	PTA80710	0.04	4	0.05	5	0.01	1														
+comment	CZCE	PTA807	1	1	PTA80711	0.041	4.1	0.051	5.1	0.011	1.11														
+comment	CZCE	PTA807	3	0	PTA80730	0.042	4.2	0.052	5.2	0.012	1.12														
+comment	CZCE	PTA807	3	1	PTA80731	0.043	4.3	0.053	5.3	0.013	1.13														
+comment	CZCE	PTA809	1	0	PTA80910	0.04	4	0.05	5	0.01	1														
+comment	CZCE	PTA809	1	1	PTA80911	0.041	4.1	0.051	5.1	0.011	1.11														
+comment	CZCE	PTA809	3	0	PTA80930	0.042	4.2	0.052	5.2	0.012	1.12														
+comment	CZCE	PTA809	3	1	PTA80931	0.043	4.3	0.053	5.3	0.013	1.13														
+comment	期货：交易所手续费率&投资者手续费率																								
+comment	投资者代码	交易所代码	合约代码	投机套保标志	开平标志	辅助列	投资者按金额	投资者按手数	交易所按金额	交易所按手数 	投资者结算按金额	投资者结算按手数													
+comment	6001	CZCE	SR807	1 	0 	SR80710	0.000500 	5.000000 	0.000400 	4.000000 	0.0002	2													
+comment	6001	CZCE	SR807	1 	1 	SR80711	0.000400 	4.000000 	0.000300 	3.000000 	0.0002	2													
+comment	6001	CZCE	SR807	1 	2 	SR80712	0.000300 	3.000000 	0.000200 	2.000000 	0.0002	2													
+comment	6001	CZCE	SR807	1 	3 	SR80713	0.000200 	2.000000 	0.000100 	1.000000 	0.0002	2													
+comment	6001	CZCE	SR807	3 	0 	SR80730	0.000500 	5.000000 	0.000500 	5.000000 	0.0002	2													
+comment	6001	CZCE	SR807	3 	1 	SR80731	0.000400 	4.000000 	0.000400 	4.000000 	0.0002	2													
+comment	6001	CZCE	SR807	3 	2 	SR80732	0.000300 	3.000000 	0.000300 	3.000000 	0.0002	2													
+comment	6001	CZCE	SR807	3 	3 	SR80733	0.000200 	2.000000 	0.000200 	2.000000 	0.0002	2													
+comment	6001	CZCE	SR809	1 	0 	SR80910	0.000500 	5.000000 	0.000400 	4.000000 	0.0002	2													
+comment	6001	CZCE	SR809	1 	1 	SR80911	0.000400 	4.000000 	0.000300 	3.000000 	0.0002	2													
+comment	6001	CZCE	SR809	1 	2 	SR80912	0.000300 	3.000000 	0.000200 	2.000000 	0.0002	2													
+comment	6001	CZCE	SR809	1 	3 	SR80913	0.000200 	2.000000 	0.000100 	1.000000 	0.0002	2													
+comment	6001	CZCE	SR809	3 	0 	SR80930	0.000500 	5.000000 	0.000500 	5.000000 	0.000200 	2.000000 													
+comment	6001	CZCE	SR809	3 	1 	SR80931	0.000400 	4.000000 	0.000400 	4.000000 	0.000200 	2.000000 													
+comment	6001	CZCE	SR809	3 	2 	SR80932	0.000300 	3.000000 	0.000300 	3.000000 	0.000200 	2.000000 													
+comment	6001	CZCE	SR809	3 	3 	SR80933	0.000200 	2.000000 	0.000200 	2.000000 	0.000200 	2.000000 													
+comment	6001	CZCE	OI811	1 	0 	OI81110	0.000500 	5.000000 	0.000400 	4.000000 	0.0002	2													
+comment	6001	CZCE	OI811	1 	1 	OI81111	0.000400 	4.000000 	0.000300 	3.000000 	0.0002	2													
+comment	6001	CZCE	OI811	1 	2 	OI81112	0.000300 	3.000000 	0.000200 	2.000000 	0.0002	2													
+comment	6001	CZCE	OI811	1 	3 	OI81113	0.000200 	2.000000 	0.000100 	1.000000 	0.0002	2													
+comment	6001	CZCE	OI811	3 	0 	OI81130	0.000500 	5.000000 	0.000500 	5.000000 	0.000200 	2.000000 													
+comment	6001	CZCE	OI811	3 	1 	OI81131	0.000400 	4.000000 	0.000400 	4.000000 	0.000200 	2.000000 													
+comment	6001	CZCE	OI811	3 	2 	OI81132	0.000300 	3.000000 	0.000300 	3.000000 	0.000200 	2.000000 													
+comment	6001	CZCE	OI811	3 	3 	OI81133	0.000200 	2.000000 	0.000200 	2.000000 	0.000200 	2.000000 													
+comment	6001	CZCE	PTA807	1 	0 	PTA80710	0.000500 	5.000000 	0.000400 	4.000000 	0.0002	2													
+comment	6001	CZCE	PTA807	1 	1 	PTA80711	0.000400 	4.000000 	0.000300 	3.000000 	0.0002	2													
+comment	6001	CZCE	PTA807	1 	2 	PTA80712	0.000300 	3.000000 	0.000200 	2.000000 	0.0002	2													
+comment	6001	CZCE	PTA807	1 	3 	PTA80713	0.000200 	2.000000 	0.000100 	1.000000 	0.0002	2													
+comment	6001	CZCE	PTA807	3 	0 	PTA80730	0.000500 	5.000000 	0.000500 	5.000000 	0.000200 	2.000000 													
+comment	6001	CZCE	PTA807	3 	1 	PTA80731	0.000400 	4.000000 	0.000400 	4.000000 	0.000200 	2.000000 													
+comment	6001	CZCE	PTA807	3 	2 	PTA80732	0.000300 	3.000000 	0.000300 	3.000000 	0.000200 	2.000000 													
+comment	6001	CZCE	PTA807	3 	3 	PTA80733	0.000200 	2.000000 	0.000200 	2.000000 	0.000200 	2.000000 													
+comment	6001	CZCE	PTA809	1 	0 	PTA80910	0.000500 	5.000000 	0.000400 	4.000000 	0.0002	2													
+comment	6001	CZCE	PTA809	1 	1 	PTA80911	0.000400 	4.000000 	0.000300 	3.000000 	0.0002	2													
+comment	6001	CZCE	PTA809	1 	2 	PTA80912	0.000300 	3.000000 	0.000200 	2.000000 	0.0002	2													
+comment	6001	CZCE	PTA809	1 	3 	PTA80913	0.000200 	2.000000 	0.000100 	1.000000 	0.0002	2													
+comment	6001	CZCE	PTA809	3 	0 	PTA80930	0.000500 	5.000000 	0.000500 	5.000000 	0.000200 	2.000000 													
+comment	6001	CZCE	PTA809	3 	1 	PTA80931	0.000400 	4.000000 	0.000400 	4.000000 	0.000200 	2.000000 													
+comment	6001	CZCE	PTA809	3 	2 	PTA80932	0.000300 	3.000000 	0.000300 	3.000000 	0.000200 	2.000000 													
+comment	6001	CZCE	PTA809	3 	3 	PTA80933	0.000200 	2.000000 	0.000200 	2.000000 	0.000200 	2.000000 													
+comment	期权：交易所手续费率&投资者手续费率				4: 执行5：履约																				
+comment	投资者代码	交易所代码	合约代码	投机套保标志	开平标志	辅助列	投资者手续费率按金额	投资者手续费率按手数	交易所手续费率按金额	交易所手续费率按手数	投资者结算按金额	投资者结算按手数													
+comment	6001	CZCE	SR807C6500	1 	0 	SR807C650010	0.0005	5	0.0004	4	0.0002	2													
+comment	6001	CZCE	SR807C6500	1 	1 	SR807C650011	0.0004	4	0.0003	3	0.0002	2													
+comment	6001	CZCE	SR807C6500	1 	3 	SR807C650013	0.0002	2	0.0001	1	0.0002	2													
+comment	6001	CZCE	SR807C6500	1 	4 	SR807C650014	0.00042	4.2	0.00032	3.2	0.0002	2													
+comment	6001	CZCE	SR807C6500	1 	5 	SR807C650015	0.00045	4.5	0.00035	3.5	0.0002	2													
+comment	6001	CZCE	SR807C6500	3 	0 	SR807C650030	0.0005	5	0.0005	5	0.0002	2													
+comment	6001	CZCE	SR807C6500	3 	1 	SR807C650031	0.0004	4	0.0004	4	0.0002	2													
+comment	6001	CZCE	SR807C6500	3 	3 	SR807C650033	0.0002	2	0.0002	2	0.0002	2													
+comment	6001	CZCE	SR807C6500	3 	4 	SR807C650034	0.00042	4.2	0.00042	4.2	0.0002	2													
+comment	6001	CZCE	SR807C6500	3 	5 	SR807C650035	0.00045	4.5	0.00045	4.5	0.0002	2													
+comment	6001	CZCE	SR807P6500	1 	0 	SR807P650010	0.0005	5	0.0004	4	0.0002	2													
+comment	6001	CZCE	SR807P6500	1 	1 	SR807P650011	0.0004	4	0.0003	3	0.0002	2													
+comment	6001	CZCE	SR807P6500	1 	3 	SR807P650013	0.0002	2	0.0001	1	0.0002	2													
+comment	6001	CZCE	SR807P6500	1 	4 	SR807P650014	0.00042	4.2	0.00032	3.2	0.0002	2													
+comment	6001	CZCE	SR807P6500	1 	5 	SR807P650015	0.00045	4.5	0.00035	3.5	0.0002	2													
+comment	6001	CZCE	SR807P6500	3 	0 	SR807P650030	0.0005	5	0.0005	5	0.0002	2													
+comment	6001	CZCE	SR807P6500	3 	1 	SR807P650031	0.0004	4	0.0004	4	0.0002	2													
+comment	6001	CZCE	SR807P6500	3 	3 	SR807P650033	0.0002	2	0.0002	2	0.0002	2													
+comment	6001	CZCE	SR807P6500	3 	4 	SR807P650034	0.00042	4.2	0.00042	4.2	0.0002	2													
+comment	6001	CZCE	SR807P6500	3 	5 	SR807P650035	0.00045	4.5	0.00045	4.5	0.0002	2													
+comment	6001	CZCE	SR807P6400	1 	0 	SR807P640010	0.0005	5	0.0004	4	0.0002	2													
+comment	6001	CZCE	SR807P6400	1 	1 	SR807P640011	0.0004	4	0.0003	3	0.0002	2													
+comment	6001	CZCE	SR807P6400	1 	3 	SR807P640013	0.0002	2	0.0001	1	0.0002	2													
+comment	6001	CZCE	SR807P6400	1 	4 	SR807P640014	0.00042	4.2	0.00032	3.2	0.0002	2													
+comment	6001	CZCE	SR807P6400	1 	5 	SR807P640015	0.00045	4.5	0.00035	3.5	0.0002	2													
+comment	6001	CZCE	SR807P6400	3 	0 	SR807P640030	0.0005	5	0.0005	5	0.0002	2													
+comment	6001	CZCE	SR807P6400	3 	1 	SR807P640031	0.0004	4	0.0004	4	0.0002	2													
+comment	6001	CZCE	SR807P6400	3 	3 	SR807P640033	0.0002	2	0.0002	2	0.0002	2													
+comment	6001	CZCE	SR807P6400	3 	4 	SR807P640034	0.00042	4.2	0.00042	4.2	0.0002	2													
+comment	6001	CZCE	SR807P6400	3 	5 	SR807P640035	0.00045	4.5	0.00045	4.5	0.0002	2													
+comment	6001	CZCE	SR809C6600	1 	0 	SR809C660010	0.0005	5	0.0004	4	0.0002	2													
+comment	6001	CZCE	SR809C6600	1 	1 	SR809C660011	0.0004	4	0.0003	3	0.0002	2													
+comment	6001	CZCE	SR809C6600	1 	3 	SR809C660013	0.0002	2	0.0001	1	0.0002	2													
+comment	6001	CZCE	SR809C6600	1 	4 	SR809C660014	0.00042	4.2	0.00032	3.2	0.0002	2													
+comment	6001	CZCE	SR809C6600	1 	5 	SR809C660015	0.00045	4.5	0.00035	3.5	0.0002	2													
+comment	6001	CZCE	SR809C6600	3 	0 	SR809C660030	0.0005	5	0.0005	5	0.0002	2													
+comment	6001	CZCE	SR809C6600	3 	1 	SR809C660031	0.0004	4	0.0004	4	0.0002	2													
+comment	6001	CZCE	SR809C6600	3 	3 	SR809C660033	0.0002	2	0.0002	2	0.0002	2													
+comment	6001	CZCE	SR809C6600	3 	4 	SR809C660034	0.00042	4.2	0.00042	4.2	0.0002	2													
+comment	6001	CZCE	SR809C6600	3 	5 	SR809C660035	0.00045	4.5	0.00045	4.5	0.0002	2													
+comment	6001	CZCE	PTA807C6500	1 	0 	PTA807C650010	0.0005	5	0.0004	4	0.0002	2													
+comment	6001	CZCE	PTA807C6500	1 	1 	PTA807C650011	0.0004	4	0.0003	3	0.0002	2													
+comment	6001	CZCE	PTA807C6500	1 	3 	PTA807C650013	0.0002	2	0.0001	1	0.0002	2													
+comment	6001	CZCE	PTA807C6500	1 	4 	PTA807C650014	0.00042	4.2	0.00032	3.2	0.0002	2													
+comment	6001	CZCE	PTA807C6500	1 	5 	PTA807C650015	0.00045	4.5	0.00035	3.5	0.0002	2													
+comment	6001	CZCE	PTA807C6500	3 	0 	PTA807C650030	0.0005	5	0.0005	5	0.0002	2													
+comment	6001	CZCE	PTA807C6500	3 	1 	PTA807C650031	0.0004	4	0.0004	4	0.0002	2													
+comment	6001	CZCE	PTA807C6500	3 	3 	PTA807C650033	0.0002	2	0.0002	2	0.0002	2													
+comment	6001	CZCE	PTA807C6500	3 	4 	PTA807C650034	0.00042	4.2	0.00042	4.2	0.0002	2													
+comment	6001	CZCE	PTA807C6500	3 	5 	PTA807C650035	0.00045	4.5	0.00045	4.5	0.0002	2													
+comment	6001	CZCE	PTA807P6200	1 	0 	PTA807P620010	0.0005	5	0.0004	4	0.0002	2													
+comment	6001	CZCE	PTA807P6200	1 	1 	PTA807P620011	0.0004	4	0.0003	3	0.0002	2													
+comment	6001	CZCE	PTA807P6200	1 	3 	PTA807P620013	0.0002	2	0.0001	1	0.0002	2													
+comment	6001	CZCE	PTA807P6200	1 	4 	PTA807P620014	0.00042	4.2	0.00032	3.2	0.0002	2													
+comment	6001	CZCE	PTA807P6200	1 	5 	PTA807P620015	0.00045	4.5	0.00035	3.5	0.0002	2													
+comment	6001	CZCE	PTA807P6200	3 	0 	PTA807P620030	0.0005	5	0.0005	5	0.0002	2													
+comment	6001	CZCE	PTA807P6200	3 	1 	PTA807P620031	0.0004	4	0.0004	4	0.0002	2													
+comment	6001	CZCE	PTA807P6200	3 	3 	PTA807P620033	0.0002	2	0.0002	2	0.0002	2													
+comment	6001	CZCE	PTA807P6200	3 	4 	PTA807P620034	0.00042	4.2	0.00042	4.2	0.0002	2													
+comment	6001	CZCE	PTA807P6200	3 	5 	PTA807P620035	0.00045	4.5	0.00045	4.5	0.0002	2													
+comment	6001	CZCE	PTA807P6500	1 	0 	PTA807P650010	0.0005	5	0.0004	4	0.0002	2													
+comment	6001	CZCE	PTA807P6500	1 	1 	PTA807P650011	0.0004	4	0.0003	3	0.0002	2													
+comment	6001	CZCE	PTA807P6500	1 	3 	PTA807P650013	0.0002	2	0.0001	1	0.0002	2													
+comment	6001	CZCE	PTA807P6500	1 	4 	PTA807P650014	0.00042	4.2	0.00032	3.2	0.0002	2													
+comment	6001	CZCE	PTA807P6500	3 	5 	PTA807P650035	0.00045	4.5	0.00035	3.5	0.0002	2													
+comment	6001	CZCE	PTA807P6500	3 	0 	PTA807P650030	0.0005	5	0.0005	5	0.0002	2													
+comment	6001	CZCE	PTA807P6500	3 	1 	PTA807P650031	0.0004	4	0.0004	4	0.0002	2													
+comment	6001	CZCE	PTA807P6500	3 	3 	PTA807P650033	0.0002	2	0.0002	2	0.0002	2													
+comment	6001	CZCE	PTA807P6500	3 	4 	PTA807P650034	0.00042	4.2	0.00042	4.2	0.0002	2													
+comment	6001	CZCE	PTA807P6500	3 	5 	PTA807P650035	0.00045	4.5	0.00045	4.5	0.0002	2													
+comment	 结算参数																								
+comment	交易所结算参数设置	0:最后交易日收取				0：双边1：对锁	开仓3：开仓&行权																		
 comment	交易所	投资者交割手续费收取时间	交易所交割手续费收取时间	虚值期权保证金优惠比率	最低保障系数	" 
-郑商所组合持仓保证金收取方式"	郑商所行权手续费收取方式																
-comment	CZCE	0 	0 	0.5	0.5	1	3																
-comment	投资者结算参数设置																						
-comment	投资者代码	币种	基础保证金	最低权益																			
-comment	所有	CNY	1000	2000																			
-comment	所有	HKD	0	0																			
-comment	所有	USD	0	0																			
-comment	汇率																						
-comment	USD->CNY	CNY->USD																					
-comment	6.1234	0.1345																					
-comment	HKD->CNY	CNY->HKD																					
-comment	0.882	1.1338																					
-comment	投资者货币质押折扣率																						
-comment	USD->CNY	CNY->USD																					
-comment	0.9	0.95																					
-comment	HKD->CNY	CNY->HKD																					
-comment	0.9	0.95																					
-comment	交易所货币质押折扣率																						
-comment	USD->CNY	CNY->USD																					
-comment	0.8	0.85																					
-comment	HKD->CNY	CNY->HKD																					
-comment	0.8	0.85																					
-comment	先删除数据																						
-function	sys.sqlfile																						
-params	value																						
-	./data/delinitdata.sql																						
-comment	function	db.settleadmin.PKGI_TradeMgrt.up_InsSysSettleParam																					
-comment	params	io_tySysSettleParam				i_chOperatorID	o_nRetCode	o_varRetMsg	i_chCommit														
-comment		brokerid	SystemParamID	SystemParamValue	Memo																		
-comment		9999	v	2.00000 	手续费算法开关 1：与CTP1手续费逻辑相同，存在留存为负问题  2：CTP2新的手续费计算逻辑，无留存为负问题   	0000.0000_admin			0														
-comment																							
-comment	function	sys.initdb																					
-comment	params	t_syssettleparam																					
-comment		BROKERID	SYSTEMPARAMID	SYSTEMPARAMVALUE	MEMO																		
-comment		0000      	U	/home/ctp203/data/settlementfile/                                                                                                                                                                                                                  	upload                                                                                                                                                          																		
-comment		0000      	H	/home/ctp203/tools/settlement_tools/                                                                                                                                                                                                                              	upload                                                                                                                                                          																		
+郑商所组合持仓保证金收取方式"	郑商所行权手续费收取方式																		
+comment	CZCE	0 	0 	0.5	0.5	1	3																		
+comment	投资者结算参数设置																								
+comment	投资者代码	币种	基础保证金	最低权益																					
+comment	所有	CNY	1000	2000																					
+comment	所有	HKD	0	0																					
+comment	所有	USD	0	0																					
+comment	汇率																								
+comment	USD->CNY	CNY->USD																							
+comment	6.1234	0.1345																							
+comment	HKD->CNY	CNY->HKD																							
+comment	0.882	1.1338																							
+comment	投资者货币质押折扣率																								
+comment	USD->CNY	CNY->USD																							
+comment	0.9	0.95																							
+comment	HKD->CNY	CNY->HKD																							
+comment	0.9	0.95																							
+comment	交易所货币质押折扣率																								
+comment	USD->CNY	CNY->USD																							
+comment	0.8	0.85																							
+comment	HKD->CNY	CNY->HKD																							
+comment	0.8	0.85																							
+comment	先删除数据																								
+function	sys.sqlfile																								
+params	value																								
+	./data/delinitdata.sql																								
+comment	function	db.settleadmin.PKGI_TradeMgrt.up_InsSysSettleParam																							
+comment	params	io_tySysSettleParam				i_chOperatorID	o_nRetCode	o_varRetMsg	i_chCommit																
+comment		brokerid	SystemParamID	SystemParamValue	Memo																				
+comment		9999	v	2.00000 	手续费算法开关 1：与CTP1手续费逻辑相同，存在留存为负问题  2：CTP2新的手续费计算逻辑，无留存为负问题   	0000.0000_admin			0																
+comment																									
+comment	function	sys.initdb																							
+comment	params	t_syssettleparam																							
+comment		BROKERID	SYSTEMPARAMID	SYSTEMPARAMVALUE	MEMO																				
+comment		0000      	U	/home/ctp203/data/settlementfile/                                                                                                                                                                                                                  	upload                                                                                                                                                          																				
+comment		0000      	H	/home/ctp203/tools/settlement_tools/                                                                                                                                                                                                                              	upload                                                                                                                                                          																				
 comment	9999	v	2	"手续费算法开关 1：与CTP1手续费逻辑相同，存在留存为负问题  2：CTP2新的手续费计算逻辑，无留存为负问题                                                             
-"																			
-comment	系统状态为结算状态																						
-function	sys.sql																						
-params	value																						
-	update t_settledate  set systemstatus='7'																						
-comment	function	sys.initdb																					
-comment	params	t_investor																					
-comment		BROKERID	INVESTORID	INVESTORNAME	INVESTORTYPE	INVESTORGROUPID	DEPARTMENTID	INVESTORFLAG	OPENDATE	CANCELDATE	ISEMAIL	ISSMS	ISUSINGOTP	COMMMODELID	MARGINMODELID	CLIENTREGION	CLIENTMODE	ASSETMGRCLIENTTYPE	RISKLEVEL	CONTRACTCODE	ISACTIVE		
-comment		9999	6001        	二级代理商测试	1	6666        	00		20170808		0	1	0	0001        		3	4 		1		1		
-comment																							
-comment	function	sys.initdb																					
-comment	params	t_investunit																					
-comment		BROKERID	INVESTORID	INVESTUNITID	ACCOUNTID	CURRENCYID	COMMMODELID	MARGINMODELID	INVESTUNITNAME	ISACTIVE	MEMO	GROUPID											
-comment		9999	6001	B00101	6001	CNY			B00101	1													
-comment		9999	6001	B00102	6001	CNY			B00102	1													
-comment																							
-comment	function	sys.initdb																					
-comment	params	t_account																					
-comment		BROKERID	ACCOUNTID	ACCOUNTNAME	CURRENCYID	PASSWORD	OPENDATE	CANCELDATE	PRIORITY	ISACTIVE	SETTLEACCFLAG												
-comment		9999	6001	6001                                                                            	CNY	123456	20181024		1	1	1												
-comment		9999	6001	6001	HKD	123456	20181024		1	1	1												
-comment		9999	6001	6001                                                                            	USD	123456	20181024		1	1	1												
-comment	function	sys.initdb																					
-comment	params	t_accountownership																					
-comment		BROKERID	ACCOUNTID	CURRENCYID	ACCOUNTOWNER	ACCOUNTOWNERMODE	ISACTIVE																
-comment		9999	6001	CNY	6001	1	1																
-comment		9999	6001	HKD	6001	1	1																
-comment		9999	6001	USD	6001	1	1																
-comment																							
-comment	function	sys.initdb																					
-comment	params	t_tradingcode																					
-comment		BROKERID	INVESTORID	EXCHANGEID	CLIENTID	ISACTIVE	OPENDATE	CANCLEDATE	OPENCARDTYPE	OPENCARDNO	ADDRESS	CODESOURCETYPE	FREEZESTATUS										
-comment		9999	6001	CZCE    	50010001	1	20181030					1	1										
-comment		9999	6001	CZCE    	50010002	1	20181030					1	1										
-comment																							
-comment	function	sys.initdb																					
-comment	params	t_tradingcodemap																					
-comment		BROKERID	INVESTORID	INVESTUNITID	EXCHANGEID	CLIENTID	CLIENTIDMODE	ISACTIVE															
-comment		9999	6001	B00101	CZCE    	50010001	1	1															
-comment		9999	6001	B00102	CZCE    	50010002	1	1															
-																							
-comment	交易所期货手续费率设置到品种																						
-function	sys.initdb																						
-params	t_exchfutcommrate																						
-	TRADINGDAY	EXCHANGEID	INSTRUMENTID	BROKERID	OPENRATIOBYMONEY	OPENRATIOBYVOLUME	CLOSERATIOBYMONEY	CLOSERATIOBYVOLUME	CLOSETODAYRATIOBYMONEY	CLOSETODAYRATIOBYVOLUME	DELIVRATIOBYMONEY	DELIVRATIOBYVOLUME	OPENCLOSERATIOBYMONEY	OPENCLOSERATIOBYVOLUME	HEDGEFLAG	VERSIONNO							
-	20180326	CZCE    	SR	9999	0.00040000	4.00000000	0.00030000	3.00000000	0.00010000	1.00000000	0.00020000	2.00000000	0.00000000	0.00000000	1	9							
-	20180326	CZCE    	SR	9999	0.00050000	5.00000000	0.00040000	4.00000000	0.00020000	2.00000000	0.00030000	3.00000000	0.00000000	0.00000000	3	5							
-	20180326	CZCE    	OI	9999	0.00040000	4.00000000	0.00030000	3.00000000	0.00010000	1.00000000	0.00020000	2.00000000	0.00000000	0.00000000	1	9							
-	20180326	CZCE    	OI	9999	0.00050000	5.00000000	0.00040000	4.00000000	0.00020000	2.00000000	0.00030000	3.00000000	0.00000000	0.00000000	3	5							
-	20180326	CZCE    	PTA	9999	0.00040000	4.00000000	0.00030000	3.00000000	0.00010000	1.00000000	0.00020000	2.00000000	0.00000000	0.00000000	1	9							
-	20180326	CZCE    	PTA	9999	0.00050000	5.00000000	0.00040000	4.00000000	0.00020000	2.00000000	0.00030000	3.00000000	0.00000000	0.00000000	3	5							
-																							
-comment	投资者期货手续费率设置到单一投资者																						
-function	sys.initdb																						
-params	t_invstfutcommrate																						
-	TRADINGDAY	EXCHANGEID	INSTRUMENTID	INVESTORRANGE	BROKERID	INVESTORID	INVESTUNITID	OPENRATIOBYMONEY	OPENRATIOBYVOLUME	CLOSERATIOBYMONEY	CLOSERATIOBYVOLUME	CLOSETODAYRATIOBYMONEY	CLOSETODAYRATIOBYVOLUME	DELIVRATIOBYMONEY	DELIVRATIOBYVOLUME	OPENCLOSERATIOBYMONEY	OPENCLOSERATIOBYVOLUME	HEDGEFLAG	VERSIONNO				
-	20180326	CZCE    	SR	3	9999	6001	6001	0.00050000	5.00000000	0.00040000	4.00000000	0.00020000	2.00000000	0.00030000	3.00000000	0.00000000	0.00000000	1	3				
-	20180326	CZCE    	OI	3	9999	6001	6001	0.00050000	5.00000000	0.00040000	4.00000000	0.00020000	2.00000000	0.00030000	3.00000000	0.00000000	0.00000000	1	3.00000000				
-	20180326	CZCE    	PTA	3	9999	6001	6001	0.00050000	5.00000000	0.00040000	4.00000000	0.00020000	2.00000000	0.00030000	3.00000000	0.00000000	0.00000000	1	3				
-																							
-comment	交易所期权手续费率设置到品种																						
-function	sys.initdb																						
-params	t_exchoptcommrate																						
-	TRADINGDAY	BROKERID	EXCHANGEID	INSTRUMENTID	HEDGEFLAG	OPENRATIOBYMONEY	OPENRATIOBYVOLUME	CLOSERATIOBYMONEY	CLOSERATIOBYVOLUME	CLOSETODAYRATIOBYMONEY	CLOSETODAYRATIOBYVOLUME	STRIKERATIOBYMONEY	STRIKERATIOBYVOLUME	PERFORMRATIOBYMONEY	PERFORMRATIOBYVOLUME	OPENCLOSERATIOBYMONEY	OPENCLOSERATIOBYVOLUME	VERSIONNO					
-	20180326	9999	CZCE    	SRC	1	0.00040000	4.00000000	0.00030000	3.00000000	0.00010000	1.00000000	0.00032000	3.20000000	0.00035000	3.50000000	0.00000000	0.00000000	2					
-	20180326	9999	CZCE    	SRC	3	0.00050000	5.00000000	0.00040000	4.00000000	0.00020000	2.00000000	0.00042000	4.20000000	0.00045000	4.50000000	0.00000000	0.00000000	2					
-	20180326	9999	CZCE    	SRP	1	0.00040000	4.00000000	0.00030000	3.00000000	0.00010000	1.00000000	0.00032000	3.20000000	0.00035000	3.50000000	0.00000000	0.00000000	1					
-	20180326	9999	CZCE    	SRP	3	0.00050000	5.00000000	0.00040000	4.00000000	0.00020000	2.00000000	0.00042000	4.20000000	0.00045000	4.50000000	0.00000000	0.00000000	1					
-	20180326	9999	CZCE    	PTAC	1	0.00040000	4.00000000	0.00030000	3.00000000	0.00010000	1.00000000	0.00032000	3.20000000	0.00035000	3.50000000	0.00000000	0.00000000	2.00000000					
-	20180326	9999	CZCE    	PTAC	3	0.00050000	5.00000000	0.00040000	4.00000000	0.00020000	2.00000000	0.00042000	4.20000000	0.00045000	4.50000000	0.00000000	0.00000000	2.00000000					
-	20180326	9999	CZCE    	PTAP	1	0.00040000	4.00000000	0.00030000	3.00000000	0.00010000	1.00000000	0.00032000	3.20000000	0.00035000	3.50000000	0.00000000	0.00000000	1.00000000					
-	20180326	9999	CZCE    	PTAP	3	0.00050000	5.00000000	0.00040000	4.00000000	0.00020000	2.00000000	0.00042000	4.20000000	0.00045000	4.50000000	0.00000000	0.00000000	1.00000000					
-																							
-comment	投资者期权续费率设置到单一投资者																						
-function	sys.initdb																						
-params	t_invstoptcommrate																						
-	TRADINGDAY	BROKERID	EXCHANGEID	INSTRUMENTID	INVESTORRANGE	INVESTUNITID	INVESTORID	HEDGEFLAG	OPENRATIOBYMONEY	OPENRATIOBYVOLUME	CLOSERATIOBYMONEY	CLOSERATIOBYVOLUME	CLOSETODAYRATIOBYMONEY	CLOSETODAYRATIOBYVOLUME	STRIKERATIOBYMONEY	STRIKERATIOBYVOLUME	PERFORMRATIOBYMONEY	PERFORMRATIOBYVOLUME	OPENCLOSERATIOBYMONEY	OPENCLOSERATIOBYVOLUME	VERSIONNO		
-	20180326	9999	CZCE    	SRC	3	6001	6001	1	0.00050000	5.00000000	0.00040000	4.00000000	0.00020000	2.00000000	0.00042000	4.20000000	0.00045000	4.50000000	0.00000000	0.00000000	2		
-	20180326	9999	CZCE    	SRP	3	6001	6001	1	0.00050000	5.00000000	0.00040000	4.00000000	0.00020000	2.00000000	0.00042000	4.20000000	0.00045000	4.50000000	0.00000000	0.00000000	1		
-	20180326	9999	CZCE    	PTAC	3	6001	6001	1	0.00050000	5.00000000	0.00040000	4.00000000	0.00020000	2.00000000	0.00042000	4.20000000	0.00045000	4.50000000	0.00000000	0.00000000	2.00000000		
-	20180326	9999	CZCE    	PTAP	3	6001	6001	1	0.00050000	5.00000000	0.00040000	4.00000000	0.00020000	2.00000000	0.00042000	4.20000000	0.00045000	4.50000000	0.00000000	0.00000000	1.00000000		
-																							
-comment	交易所结算参数 只导入结算的交易所数据																						
-function	sys.initdb																						
-params	t_exchangesettleparam																						
-	BROKERID	EXCHANGEID	SETTLEMENTPARAMID	SETTLEMENTPARAMVALUE	MEMO	OPERATORID	OPDATE	OPTIME															
-	9999	CZCE    	A	1                                                                                                                                                                                                                                                              	郑商所组合持仓保证金收取方式:按高腿收取保证金                                                                                                                   		20171122	10:00:10															
-	9999	CZCE    	c	3                                                                                                                                                                                                                                                              	期权行权和期货开仓都收取                                                                                                                                        		20180514	15:32:02															
-	9999	CZCE    	a	0.5                                                                                                                                                                                                                                                            			20190314	09:19:03															
-	9999	CZCE    	b	0.5                                                                                                                                                                                                                                                            			20190314	09:19:10															
-	9999	CZCE    	0	0                                                                                                                                                                                                                                                              	到期交割投资者交割手续费收取方式:最后交易日收取                                                                                                                 		20180917	14:47:35															
-	9999	CZCE    	7	0                                                                                                                                                                                                                                                              	郑商所结算方式:通过上传交易所下发文件结算，以交易所结果为准                                                                                                     		20180917	15:33:41															
-	9999	CZCE    	9	0                                                                                                                                                                                                                                                              	到期交割交易所交割手续费收取方式:最后交易日收取                                                                                                                 		20180917	14:47:26															
-comment	9999	DCE    	a	0.5			20190314	09:19:03															
-comment	9999	DCE  	b	0.5			20190314	09:19:10															
-comment	9999	SHFE    	a	0.5			20190314	09:19:03															
-comment	9999	SHFE    	b	0.5                                                                                                                                                                                                                                                            			20190314	09:19:10															
-comment	9999	CFFEX    	a	0.5			20190314	09:19:03															
-comment	9999	CFFEX 	b	0.5			20190314	09:19:10															
-																							
-comment	投资者结算参数																						
-function	sys.initdb																						
-params	t_investorsettleparam																						
-	BROKERID	INVESTORRANGE	INVESTORID	CURRENCYID	ACCOUNTID	SETTLEMENTPARAMID	SETTLEMENTPARAMVALUE	MEMO	OPERATORID	OPDATE	OPTIME												
-	9999	3	6001	CNY	6001	1	1000.0                                                                                                                                                                                                                                                         																
-	9999	3	6001	CNY	6001	2	2000                                                                                                                                                                                                                                                           																
-	9999	3	6001	HKD	6001	1	0																
-	9999	3	6001	HKD	6001	2	0																
-	9999	3	6001	USD	6001	1	0																
-	9999	3	6001	USD	6001	2	0																
-	9999	3	6001	CNY	6001	5	1	郑州锁仓保证金 1：单边收取															
-																							
-function	sys.initdb																						
-params	t_product																						
-	EXCHANGEID	PRODUCTID	COMMODITYID	PRODUCTNAME	PRODUCTCLASS	PRODUCTLIFEPHASE	CURRENCYID	QUOTECURRENCYID	POSITIONMODE	POSITIONDATETYPE	PRICEDECIMAL	DELIVMODE	DELIVUNIT	PCTDELIVTYPE	STRIKEMODE	VERSIONNO							
-	CZCE	SR	SR	白砂糖              	1	1	CNY	CNY	2	2	1	2		1	0	2							
-	CZCE	SRC	SR	白糖期权            	2	1	CNY	CNY	2	2	1	2		1	1	1							
-	CZCE	SRP	SR	白糖期权SRP         	2	1	CNY	CNY	2	2	1	2		1	1	1							
-	CZCE	PTAC	PTA	精对苯二甲酸期权	2	2	CNY	CNY	2	2	1	2		1	1	1							
-	CZCE	PTAP	PTA	精对苯二甲酸期权	2	3	CNY	CNY	2	2	1	2		1	1	1							
-	CZCE	OI	OI	菜油                	1	1	CNY	CNY	2	1	1	2		1	0	1							
-	CZCE	PTA	PTA	精对苯二甲酸        	1	1	CNY	CNY	2	1	2	2		1	0	1							
-																							
-function	sys.initdb																						
-params	t_productattr																						
-	EXCHANGEID	PRODUCTID	VOLUMEMULTIPLE	MAXMARKETORDERVOLUME	MINMARKETORDERVOLUME	MAXLIMITORDERVOLUME	MINLIMITORDERVOLUME	PRICETICK	UNDERLYINGMULTIPLE	VERSIONNO													
-	CZCE	SR	10	100	1	100	1	5.0000000000		2													
-	CZCE	SRC	10	1000	1	1000	1	1.0000000000	1.00000000	1													
-	CZCE	SRP	10	1000	1	1000	1	1.0000000000	1.00000000	1													
-	CZCE	PTAC	5	100	1	100	1	5	0	1													
-	CZCE	PTAP	5	100	1	100	1	5	0	1													
-	CZCE	OI	10	100	1	100	1	5.0000000000		1													
-	CZCE	PTA	5	100	1	100	1	5.0000000000		1													
-																							
-function	sys.initdb																						
-params	t_futinstrument																						
-	INSTRUMENTID	INSTRUMENTNAME	EXCHANGEID	PRODUCTID	CREATEDATE	OPENDATE	EXPIREDATE	DELIVERYYEAR	DELIVERYMONTH	STARTDELIVDATE	ENDDELIVDATE	DELISTINGDATE	BASISPRICE	VOLUMEMULTIPLE	INSTLIFEPHASE								
-	SR807	白糖7月             	CZCE	SR                            	20170117	20170117	20180328	2018	7	20180713	20180713	20180915	0.0000000000	10	1								
-	SR809	白砂糖809           	CZCE	SR                            	20180108	20170901	20180333	2018	9	20180915	20180915	20180915	23545.0000000000	10	1								
-	OI811	菜油811             	CZCE	OI                            	20180108	20171101	20180333	2018	11	20181115	20181115	20181115	1242.0000000000	10	1								
-	PTA807	精对苯二甲酸807     	CZCE	PTA                           	20180108	20170701	20180328	2018	7	20180114	20180114	20180114	123.0000000000	5	1								
-	PTA809	精对苯二甲酸809     	CZCE	PTA                           	20180108	20170901	20180333	2018	9	20180915	20180915	20180915	1243.0000000000	5	1								
-																							
-function	sys.initdb																						
-params	t_optinstrument																						
-	INSTRUMENTID	INSTRUMENTNAME	EXCHANGEID	PRODUCTID	CREATEDATE	OPENDATE	EXPIREDATE	DELIVERYYEAR	DELIVERYMONTH	STARTDELIVDATE	ENDDELIVDATE	DELISTINGDATE	BASISPRICE	OPTIONSTYPE	STRIKEPRICE	TARGETINSTRID	UNDERLYINGMULTIPLE	VOLUMEMULTIPLE	INSTLIFEPHASE				
-	SR807C6500	白糖807买权         	CZCE	SRC	20170118	20170118	20180327	2018	3	20180525	20180525		0.0000000000	1	6500.0000000000	SR807	1.00000000	10	1				
-	SR807P6500	白糖807卖权         	CZCE	SRP	20170118	20170118	20180327	2018	3	20180525	20180525		0.0000000000	2	6500.0000000000	SR807	1.00000000	10	1				
-	SR807P6400	白糖期权SRP807P6400 	CZCE	SRP	20180108	20170809	20180327	2018	7	20180813	20180813	20180813	4.0000000000	2	6400.0000000000	SR807	1.00000000	10	1				
-	SR809C6500	白糖期权809C6500    	CZCE	SRC	20180108	20170801	20180327	2018	9	20180915	20180915	20180915	235.0000000000	1	6500.0000000000	SR809	1.00000000	10	1				
-	SR809C6600	白糖期权809C6600	CZCE	SRC	20180108	20170801	20180332	2018	9	20180915	20180915	20180915	236.0000000000	1	6600.0000000000	SR809	1.00000000	10	1				
-	PTA807C6500	精对苯二甲酸807 	CZCE	PTAC	20170118	20170801	20180328	2018	3	20180525	20180525	0	0	1	6500.0000000000	PTA807	1.00000000	5	1				
-	PTA807P6200	精对苯二甲酸807 	CZCE	PTAP	20170118	20170801	20180328	2018	3	20180525	20180525	0	0	2	6200.0000000000	PTA807	1.00000000	5	1				
-	PTA807P6500	精对苯二甲酸807 	CZCE	PTAP	20170119	20170801	20180328	2018	7	20180813	20180813	20180813	4	2	6500.0000000000	PTA807	1.00000000	5	1				
-																							
-function	sys.initdb																						
-params	t_instrumenttradeattr																						
-	INSTRUMENTID	EXCHANGEID	MAXMARKETORDERVOLUME	MINMARKETORDERVOLUME	MAXLIMITORDERVOLUME	MINLIMITORDERVOLUME	ISTRADING	PRICETICK	PRICEDECIMAL														
-	SR807	CZCE	1000	1	1000	1	1	1.00 	2														
-	SR809	CZCE	100	1	100	1	1	5.00 	1														
-	OI811	CZCE	100	1	100	1	1	5.00 	1														
-	PTA807	CZCE	100	1	100	1	1	5.00 	2														
-	PTA809	CZCE	100	1	100	1	1	5.00 	2														
-	SR807C6500	CZCE	20	1	20	1	1	0.50 	2														
-	SR807P6500	CZCE	20	1	20	1	1	0.50 	2														
-	SR807P6400	CZCE	1000	1	1000	1	1	1.00 	1														
-	SR809C6500	CZCE	1000	1	1000	1	1	1.00 	1														
-	PTA807C6500	CZCE	100	1	100	1	1	5.00 	2														
-	PTA807P6200	CZCE	100	1	100	1	1	5.00 	2														
-	PTA807P6500	CZCE	100	1	100	1	1	5.00 	2														
-comment	产品分段																						
-function	sys.initdb																						
-params	t_productliferule																						
-	BROKERID	EXCHANGEID	PRODUCTID	BEGINDATEEXPR	BEGINDATEEXPRNAME	SEQUENCEID	EXPRSETMODE	RELATEDATEEXPR	OPERATORID	OPERATEDATE	OPERATETIME												
-	9999	CZCE	SR	OPN-000<001TRA	上市月前0月前1交易日	1	2		0000_admin                                                      	20190326	10:51:04												
-	9999	CZCE	OI	OPN-000<001TRA	上市月前0月前1交易日	1	2		0000_admin                                                      	20190326	10:50:53												
-	9999	CZCE	PTA	OPN-000<001TRA	上市月前0月前1交易日	1	2		0000.0000_admin                                                 	20190326	10:51:20												
-																							
-function	sys.initdb																						
-params	t_instrumentexprdate																						
-	BROKERID	EXCHANGEID	PRODUCTID	BEGINDATEEXPR	INSTRUMENTID	BEGINDATE																	
-	9999	CZCE	SR	OPN-000<001TRA	SR807	20161230																	
-	9999	CZCE	SR	OPN-000<001TRA	SR809	20170831																	
-	9999	CZCE	OI	OPN-000<001TRA	OI811	20170630																	
-	9999	CZCE	PTA	OPN-000<001TRA	PTA807	20170831																	
-	9999	CZCE	PTA	OPN-000<001TRA	PTA809	20171031																	
-																							
-comment	交易所期货保证金率属性交易所设置到产品级别																						
-function	sys.initdb																						
-params	t_exchfutmarginrate																						
-	BROKERID	EXCHANGEID	INSTRUMENTID	BEGINDATEEXPR	HEDGEFLAG	LONGMARGINRATIOBYMONEY	LONGMARGINRATIOBYVOLUME	SHORTMARGINRATIOBYMONEY	SHORTMARGINRATIOBYVOLUME	VERSIONNO													
-	9999	CZCE	SR	OPN-000<001TRA	1	0.04000000	4.00000000	0.04100000	4.10000000	12													
-	9999	CZCE	SR	OPN-000<001TRA	2	0.04000000	4.00000000	0.04100000	4.10000000	12													
-	9999	CZCE	SR	OPN-000<001TRA	3	0.04200000	4.20000000	0.04300000	4.30000000	12													
-	9999	CZCE	SR	OPN-000<001TRA	4	0.04200000	4.20000000	0.04300000	4.30000000	12													
-	9999	CZCE	OI	OPN-000<001TRA	1	0.04000000	4.00000000	0.04100000	4.10000000	1													
-	9999	CZCE	OI	OPN-000<001TRA	2	0.04000000	4.00000000	0.04100000	4.10000000	1													
-	9999	CZCE	OI	OPN-000<001TRA	3	0.04200000	4.20000000	0.04300000	4.30000000	1													
-	9999	CZCE	OI	OPN-000<001TRA	4	0.04200000	4.20000000	0.04300000	4.30000000	1													
-	9999	CZCE	PTA	OPN-000<001TRA	1	0.04000000	4.00000000	0.04100000	4.10000000	1													
-	9999	CZCE	PTA	OPN-000<001TRA	2	0.04000000	4.00000000	0.04100000	4.10000000	1													
-	9999	CZCE	PTA	OPN-000<001TRA	3	0.04200000	4.20000000	0.04300000	4.30000000	1													
-	9999	CZCE	PTA	OPN-000<001TRA	4	0.04200000	4.20000000	0.04300000	4.30000000	1													
-																							
-comment	当前交易所期货保证金率																						
-function	sys.initdb																						
-params	t_currexchfutmarginrate																						
-	TRADINGDAY	BROKERID	EXCHANGEID	INSTRUMENTID	RATIOATTR	HEDGEFLAG	LONGMARGINRATIOBYMONEY	LONGMARGINRATIOBYVOLUME	SHORTMARGINRATIOBYMONEY	SHORTMARGINRATIOBYVOLUME	SOURCEBEGINDATEEXPR	VERSIONNO											
-	20180326	9999	CZCE	SR	1	1	0.04000000	4.00000000	0.04100000	4.10000000	OPN-000<001TRA	1											
-	20180326	9999	CZCE	SR	1	2	0.04000000	4.00000000	0.04100000	4.10000000	OPN-000<001TRA	1											
-	20180326	9999	CZCE	SR	1	3	0.04200000	4.20000000	0.04300000	4.30000000	OPN-000<001TRA	1											
-	20180326	9999	CZCE	SR	1	4	0.04200000	4.20000000	0.04300000	4.30000000	OPN-000<001TRA	1											
-	20180326	9999	CZCE	SR807	1	1	0.04000000	4.00000000	0.04100000	4.10000000	OPN-000<001TRA	1											
-	20180326	9999	CZCE	SR807	1	2	0.04000000	4.00000000	0.04100000	4.10000000	OPN-000<001TRA	1											
-	20180326	9999	CZCE	SR807	1	3	0.04200000	4.20000000	0.04300000	4.30000000	OPN-000<001TRA	1											
-	20180326	9999	CZCE	SR807	1	4	0.04200000	4.20000000	0.04300000	4.30000000	OPN-000<001TRA	1											
-	20180326	9999	CZCE	SR809	1	1	0.04000000	4.00000000	0.04100000	4.10000000	OPN-000<001TRA	1											
-	20180326	9999	CZCE	SR809	1	2	0.04000000	4.00000000	0.04100000	4.10000000	OPN-000<001TRA	1											
-	20180326	9999	CZCE	SR809	1	3	0.04200000	4.20000000	0.04300000	4.30000000	OPN-000<001TRA	1											
-	20180326	9999	CZCE	SR809	1	4	0.04200000	4.20000000	0.04300000	4.30000000	OPN-000<001TRA	1											
-	20180326	9999	CZCE	OI	1	1	0.04000000	4.00000000	0.04100000	4.10000000	OPN-000<001TRA	1											
-	20180326	9999	CZCE	OI	1	2	0.04000000	4.00000000	0.04100000	4.10000000	OPN-000<001TRA	1											
-	20180326	9999	CZCE	OI	1	3	0.04200000	4.20000000	0.04300000	4.30000000	OPN-000<001TRA	1											
-	20180326	9999	CZCE	OI	1	4	0.04200000	4.20000000	0.04300000	4.30000000	OPN-000<001TRA	1											
-	20180326	9999	CZCE	OI811	1	1	0.04000000	4.00000000	0.04100000	4.10000000	OPN-000<001TRA	1											
-	20180326	9999	CZCE	OI811	1	2	0.04000000	4.00000000	0.04100000	4.10000000	OPN-000<001TRA	1											
-	20180326	9999	CZCE	OI811	1	3	0.04200000	4.20000000	0.04300000	4.30000000	OPN-000<001TRA	1											
-	20180326	9999	CZCE	OI811	1	4	0.04200000	4.20000000	0.04300000	4.30000000	OPN-000<001TRA	1											
-	20180326	9999	CZCE	PTA	1	1	0.04000000	4.00000000	0.04100000	4.10000000	OPN-000<001TRA	1											
-	20180326	9999	CZCE	PTA	1	2	0.04000000	4.00000000	0.04100000	4.10000000	OPN-000<001TRA	1											
-	20180326	9999	CZCE	PTA	1	3	0.04200000	4.20000000	0.04300000	4.30000000	OPN-000<001TRA	1											
-	20180326	9999	CZCE	PTA	1	4	0.04200000	4.20000000	0.04300000	4.30000000	OPN-000<001TRA	1											
-	20180326	9999	CZCE	PTA807	1	1	0.04000000	4.00000000	0.04100000	4.10000000	OPN-000<001TRA	1											
-	20180326	9999	CZCE	PTA807	1	2	0.04000000	4.00000000	0.04100000	4.10000000	OPN-000<001TRA	1											
-	20180326	9999	CZCE	PTA807	1	3	0.04200000	4.20000000	0.04300000	4.30000000	OPN-000<001TRA	1											
-	20180326	9999	CZCE	PTA807	1	4	0.04200000	4.20000000	0.04300000	4.30000000	OPN-000<001TRA	1											
-	20180326	9999	CZCE	PTA809	1	1	0.04000000	4.00000000	0.04100000	4.10000000	OPN-000<001TRA	1											
-	20180326	9999	CZCE	PTA809	1	2	0.04000000	4.00000000	0.04100000	4.10000000	OPN-000<001TRA	1											
-	20180326	9999	CZCE	PTA809	1	3	0.04200000	4.20000000	0.04300000	4.30000000	OPN-000<001TRA	1											
-	20180326	9999	CZCE	PTA809	1	4	0.04200000	4.20000000	0.04300000	4.30000000	OPN-000<001TRA	1											
-																							
-comment	投资者期货保证金率属性设置到投资者级别																						
-function	sys.initdb																						
-params	t_invstfutmarginrate																						
-	BROKERID	EXCHANGEID	INSTRUMENTID	INVESTORRANGE	INVESTORID	INVESTUNITID	BEGINDATEEXPR	HEDGEFLAG	LONGMARGINRATIOBYMONEY	LONGMARGINRATIOBYVOLUME	SHORTMARGINRATIOBYMONEY	SHORTMARGINRATIOBYVOLUME	ISRELATIVE	VERSIONNO									
-	9999	CZCE	SR	3	6001	6001	OPN-000<001TRA	1	0.05000000	5.00000000	0.05100000	5.10000000	0	1									
-	9999	CZCE	SR	3	6001	6001	OPN-000<001TRA	2	0.05000000	5.00000000	0.05100000	5.10000000	0	1									
-	9999	CZCE	SR	3	6001	6001	OPN-000<001TRA	3	0.05200000	5.20000000	0.05300000	5.30000000	0	1									
-	9999	CZCE	SR	3	6001	6001	OPN-000<001TRA	4	0.05000000	5.00000000	0.05100000	5.10000000	0	1									
-	9999	CZCE	OI	3	6001	6001	OPN-000<001TRA	1	0.05000000	5.00000000	0.05100000	5.10000000	0	1									
-	9999	CZCE	OI	3	6001	6001	OPN-000<001TRA	2	0.05000000	5.00000000	0.05100000	5.10000000	0	1									
-	9999	CZCE	OI	3	6001	6001	OPN-000<001TRA	3	0.05200000	5.20000000	0.05300000	5.30000000	0	1									
-	9999	CZCE	OI	3	6001	6001	OPN-000<001TRA	4	0.05000000	5.00000000	0.05100000	5.10000000	0	1									
-	9999	CZCE	PTA	3	6001	6001	OPN-000<001TRA	1	0.05000000	5.00000000	0.05100000	5.10000000	0	1									
-	9999	CZCE	PTA	3	6001	6001	OPN-000<001TRA	2	0.05000000	5.00000000	0.05100000	5.10000000	0	1									
-	9999	CZCE	PTA	3	6001	6001	OPN-000<001TRA	3	0.05200000	5.20000000	0.05300000	5.30000000	0	1									
-	9999	CZCE	PTA	3	6001	6001	OPN-000<001TRA	4	0.05000000	5.00000000	0.05100000	5.10000000	0	1									
-																							
-comment	当前投资者期货合约保证金率																						
-function	sys.initdb																						
-params	t_currinvstfutmarginrate																						
-	TRADINGDAY	BROKERID	EXCHANGEID	INSTRUMENTID	INVESTORRANGE	INVESTORID	INVESTUNITID	RATIOATTR	HEDGEFLAG	LONGMARGINRATIOBYMONEY	LONGMARGINRATIOBYVOLUME	SHORTMARGINRATIOBYMONEY	SHORTMARGINRATIOBYVOLUME	ISRELATIVE	SOURCEBEGINDATEEXPR	VERSIONNO							
-	20180326	9999	CZCE	SR	3	6001	6001	1	1	0.05000000	5.00000000	0.05100000	5.10000000	0	OPN-000<001TRA	1							
-	20180326	9999	CZCE	SR	3	6001	6001	1	2	0.05000000	5.00000000	0.05100000	5.10000000	0	OPN-000<001TRA	1							
-	20180326	9999	CZCE	SR	3	6001	6001	1	3	0.05200000	5.20000000	0.05300000	5.30000000	0	OPN-000<001TRA	1							
-	20180326	9999	CZCE	SR	3	6001	6001	1	4	0.05000000	5.00000000	0.05100000	5.10000000	0	OPN-000<001TRA	1							
-	20180326	9999	CZCE	OI	3	6001	6001	1	1	0.05000000	5.00000000	0.05100000	5.10000000	0	OPN-000<001TRA	1							
-	20180326	9999	CZCE	OI	3	6001	6001	1	2	0.05000000	5.00000000	0.05100000	5.10000000	0	OPN-000<001TRA	1							
-	20180326	9999	CZCE	OI	3	6001	6001	1	3	0.05200000	5.20000000	0.05300000	5.30000000	0	OPN-000<001TRA	1							
-	20180326	9999	CZCE	OI	3	6001	6001	1	4	0.05000000	5.00000000	0.05100000	5.10000000	0	OPN-000<001TRA	1							
-	20180326	9999	CZCE	PTA	3	6001	6001	1	1	0.05000000	5.00000000	0.05100000	5.10000000	0	OPN-000<001TRA	1							
-	20180326	9999	CZCE	PTA	3	6001	6001	1	2	0.05000000	5.00000000	0.05100000	5.10000000	0	OPN-000<001TRA	1							
-	20180326	9999	CZCE	PTA	3	6001	6001	1	3	0.05200000	5.20000000	0.05300000	5.30000000	0	OPN-000<001TRA	1							
-	20180326	9999	CZCE	PTA	3	6001	6001	1	4	0.05000000	5.00000000	0.05100000	5.10000000	0	OPN-000<001TRA	1							
-																							
-comment	期权标的合约保证金率调整设置到投资者级别																						
-function	sys.initdb																						
-params	t_invstoptmarginrateul																						
-	TRADINGDAY	BROKERID	EXCHANGEID	INSTRUMENTID	INVESTORRANGE	INVESTORID	INVESTUNITID	RATIOATTR	HEDGEFLAG	LONGMARGINRATIOBYMONEY	LONGMARGINRATIOBYVOLUME	SHORTMARGINRATIOBYMONEY	SHORTMARGINRATIOBYVOLUME	VERSIONNO									
-	20180326	9999	CZCE	SR	3	6001	6001	1	1	0.01000000	1.00000000	0.01100000	1.11000000	1									
-	20180326	9999	CZCE	SR	3	6001	6001	1	2	0.01000000	1.00000000	0.01100000	1.11000000	1									
-	20180326	9999	CZCE	SR	3	6001	6001	1	3	0.01200000	1.12000000	0.01300000	1.13000000	1									
-	20180326	9999	CZCE	SR	3	6001	6001	1	4	0.01000000	1.00000000	0.01100000	1.11000000	1									
-	20180326	9999	CZCE	OI	3	6001	6001	1	1	0.01000000	1.00000000	0.01100000	1.11000000	1									
-	20180326	9999	CZCE	OI	3	6001	6001	1	2	0.01000000	1.00000000	0.01100000	1.11000000	1									
-	20180326	9999	CZCE	OI	3	6001	6001	1	3	0.01200000	1.12000000	0.01300000	1.13000000	1									
-	20180326	9999	CZCE	OI	3	6001	6001	1	4	0.01000000	1.00000000	0.01100000	1.11000000	1									
-	20180326	9999	CZCE	PTA	3	6001	6001	1	1	0.01000000	1.00000000	0.01100000	1.11000000	1									
-	20180326	9999	CZCE	PTA	3	6001	6001	1	2	0.01000000	1.00000000	0.01100000	1.11000000	1									
-	20180326	9999	CZCE	PTA	3	6001	6001	1	3	0.01200000	1.12000000	0.01300000	1.13000000	1									
-	20180326	9999	CZCE	PTA	3	6001	6001	1	4	0.01000000	1.00000000	0.01100000	1.11000000	1									
-																							
-function	sys.initdb																						
-params	t_invstfutsettlecommrate																						
-	TRADINGDAY	EXCHANGEID	INSTRUMENTID	INVESTORRANGE	BROKERID	INVESTORID	INVESTUNITID	SETTLERATIOBYMONEY	SETTLERATIOBYVOLUME	HEDGEFLAG	VERSIONNO												
-	20180326	CZCE    	SR	3	9999	6001	6001	0.00020000	2.00000000	1	1												
-	20180326	CZCE    	OI	3	9999	6001	6001	0.00020000	2.00000000	1	1												
-	20180326	CZCE    	PTA	3	9999	6001	6001	0.00020000	2.00000000	1	1												
-																							
-function	sys.initdb																						
-params	t_invstoptsettlecommrate																						
-	TRADINGDAY	BROKERID	EXCHANGEID	INSTRUMENTID	INVESTORRANGE	INVESTUNITID	INVESTORID	HEDGEFLAG	SETTLERATIOBYMONEY	SETTLERATIOBYVOLUME	VERSIONNO												
-	20180326	9999	CZCE    	SRC	3	6001	6001	1	0.00020000	2.00000000	1												
-	20180326	9999	CZCE    	SRP	3	6001	6001	1	0.00020000	2.00000000	1												
-	20180326	9999	CZCE    	PTAC	3	6001	6001	1	0.00020000	2.00000000	1												
-	20180326	9999	CZCE    	PTAP	3	6001	6001	1	0.00020000	2.00000000	1												
-																							
-function	sys.initdb																						
-params	T_SPECDEALPRODUCT																						
-	EXCHANGEID	PRODUCTID	PRODUCTNAME	PRODUCTCLASS	CLOSEDEALTYPE	SPECPRODUCTTYPE	MORTGAGEFUNDUSERANGE	CURRENCYID	QUOTECURRENCYID	PRODUCTGROUPID													
-	CZCE    	PTA	精对苯二甲酸        	1	0	2		CNY															
-																							
-function	sys.initdb																						
-params	T_EXCHANGERATE																						
-	TRADINGDAY	BROKERID	EXCHANGEID	FROMCURRENCYID	FROMCURRENCYUNIT	TOCURRENCYID	EXCHANGERATE																
-	20180326	9999	INE     	CNY	1.00000000	USD	0.13450000																
-	20180326	9999	INE     	CNY	1.00000000	HKD	1.13380000																
-	20180326	9999	INE     	HKD	1.00000000	CNY	0.88200000																
-	20180326	9999	INE     	USD	1.00000000	CNY	6.12340000																
-																							
-function	sys.initdb																						
-params	t_invstfundmortdiscount																						
-	BROKERID	EXCHANGEID	SOURCECURRENCYID	TARGETCURRENCYID	DISCOUNTRATE	MEMO																	
-	9999	INE     	USD	CNY	0.90000000																		
-	9999	INE     	HKD	CNY	0.90000000																		
-	9999	INE     	CNY	HKD	0.95000000																		
-	9999	INE     	CNY	USD	0.95000000																		
-																							
-function	sys.initdb																						
-params	t_fundmortgage																						
-	BROKERID	EXCHANGEID	SOURCECURRENCYID	TARGETCURRENCYID	DISCOUNTRATE	MEMO																	
-	9999	INE     	USD	CNY	0.80000000																		
-	9999	INE     	HKD	CNY	0.80000000																		
-	9999	INE     	CNY	HKD	0.85000000																		
-	9999	INE     	CNY	USD	0.85000000																		
-																							
-function	sys.initdb																						
-params	t_mortgage																						
-	BROKERID	MORTGAGEID	MORTGAGENAME	SETTLEMENTPRICE	PRICERANGE	DISCOUNTRATE	INTERESTRATE	MORTGAGEUNIT	MEMO	exchangeid													
-	9999	SR	SR	4000.0000000000	1.0000000000	1.00000000	1.00000000	1		CZCE													
-function	sys.read																						
-params	value																						
+"																					
+comment	系统状态为结算状态																								
+function	sys.sql																								
+params	value																								
+	update t_settledate  set systemstatus='7'																								
+comment	function	sys.initdb																							
+comment	params	t_investor																							
+comment		BROKERID	INVESTORID	INVESTORNAME	INVESTORTYPE	INVESTORGROUPID	DEPARTMENTID	INVESTORFLAG	OPENDATE	CANCELDATE	ISEMAIL	ISSMS	ISUSINGOTP	COMMMODELID	MARGINMODELID	CLIENTREGION	CLIENTMODE	ASSETMGRCLIENTTYPE	RISKLEVEL	CONTRACTCODE	ISACTIVE				
+comment		9999	6001        	二级代理商测试	1	6666        	00		20170808		0	1	0	0001        		3	4 		1		1				
+comment																									
+comment	function	sys.initdb																							
+comment	params	t_investunit																							
+comment		BROKERID	INVESTORID	INVESTUNITID	ACCOUNTID	CURRENCYID	COMMMODELID	MARGINMODELID	INVESTUNITNAME	ISACTIVE	MEMO	GROUPID													
+comment		9999	6001	B00101	6001	CNY			B00101	1															
+comment		9999	6001	B00102	6001	CNY			B00102	1															
+comment																									
+comment	function	sys.initdb																							
+comment	params	t_account																							
+comment		BROKERID	ACCOUNTID	ACCOUNTNAME	CURRENCYID	PASSWORD	OPENDATE	CANCELDATE	PRIORITY	ISACTIVE	SETTLEACCFLAG														
+comment		9999	6001	6001                                                                            	CNY	123456	20181024		1	1	1														
+comment		9999	6001	6001	HKD	123456	20181024		1	1	1														
+comment		9999	6001	6001                                                                            	USD	123456	20181024		1	1	1														
+comment	function	sys.initdb																							
+comment	params	t_accountownership																							
+comment		BROKERID	ACCOUNTID	CURRENCYID	ACCOUNTOWNER	ACCOUNTOWNERMODE	ISACTIVE																		
+comment		9999	6001	CNY	6001	1	1																		
+comment		9999	6001	HKD	6001	1	1																		
+comment		9999	6001	USD	6001	1	1																		
+comment																									
+comment	function	sys.initdb																							
+comment	params	t_tradingcode																							
+comment		BROKERID	INVESTORID	EXCHANGEID	CLIENTID	ISACTIVE	OPENDATE	CANCLEDATE	OPENCARDTYPE	OPENCARDNO	ADDRESS	CODESOURCETYPE	FREEZESTATUS												
+comment		9999	6001	CZCE    	50010001	1	20181030					1	1												
+comment		9999	6001	CZCE    	50010002	1	20181030					1	1												
+comment																									
+comment	function	sys.initdb																							
+comment	params	t_tradingcodemap																							
+comment		BROKERID	INVESTORID	INVESTUNITID	EXCHANGEID	CLIENTID	CLIENTIDMODE	ISACTIVE																	
+comment		9999	6001	B00101	CZCE    	50010001	1	1																	
+comment		9999	6001	B00102	CZCE    	50010002	1	1																	
+																									
+comment	交易所期货手续费率设置到品种																								
+function	sys.initdb																								
+params	t_exchfutcommrate																								
+	TRADINGDAY	EXCHANGEID	INSTRUMENTID	BROKERID	OPENRATIOBYMONEY	OPENRATIOBYVOLUME	CLOSERATIOBYMONEY	CLOSERATIOBYVOLUME	CLOSETODAYRATIOBYMONEY	CLOSETODAYRATIOBYVOLUME	DELIVRATIOBYMONEY	DELIVRATIOBYVOLUME	OPENCLOSERATIOBYMONEY	OPENCLOSERATIOBYVOLUME	HEDGEFLAG	VERSIONNO									
+	20180326	CZCE    	SR	9999	0.00040000	4.00000000	0.00030000	3.00000000	0.00010000	1.00000000	0.00020000	2.00000000	0.00000000	0.00000000	1	9									
+	20180326	CZCE    	SR	9999	0.00050000	5.00000000	0.00040000	4.00000000	0.00020000	2.00000000	0.00030000	3.00000000	0.00000000	0.00000000	3	5									
+	20180326	CZCE    	OI	9999	0.00040000	4.00000000	0.00030000	3.00000000	0.00010000	1.00000000	0.00020000	2.00000000	0.00000000	0.00000000	1	9									
+	20180326	CZCE    	OI	9999	0.00050000	5.00000000	0.00040000	4.00000000	0.00020000	2.00000000	0.00030000	3.00000000	0.00000000	0.00000000	3	5									
+	20180326	CZCE    	PTA	9999	0.00040000	4.00000000	0.00030000	3.00000000	0.00010000	1.00000000	0.00020000	2.00000000	0.00000000	0.00000000	1	9									
+	20180326	CZCE    	PTA	9999	0.00050000	5.00000000	0.00040000	4.00000000	0.00020000	2.00000000	0.00030000	3.00000000	0.00000000	0.00000000	3	5									
+																									
+comment	投资者期货手续费率设置到单一投资者																								
+function	sys.initdb																								
+params	t_invstfutcommrate																								
+	TRADINGDAY	EXCHANGEID	INSTRUMENTID	INVESTORRANGE	BROKERID	INVESTORID	INVESTUNITID	OPENRATIOBYMONEY	OPENRATIOBYVOLUME	CLOSERATIOBYMONEY	CLOSERATIOBYVOLUME	CLOSETODAYRATIOBYMONEY	CLOSETODAYRATIOBYVOLUME	DELIVRATIOBYMONEY	DELIVRATIOBYVOLUME	OPENCLOSERATIOBYMONEY	OPENCLOSERATIOBYVOLUME	HEDGEFLAG	VERSIONNO						
+	20180326	CZCE    	SR	3	9999	6001	6001	0.00050000	5.00000000	0.00040000	4.00000000	0.00020000	2.00000000	0.00030000	3.00000000	0.00000000	0.00000000	1	3						
+	20180326	CZCE    	OI	3	9999	6001	6001	0.00050000	5.00000000	0.00040000	4.00000000	0.00020000	2.00000000	0.00030000	3.00000000	0.00000000	0.00000000	1	3.00000000						
+	20180326	CZCE    	PTA	3	9999	6001	6001	0.00050000	5.00000000	0.00040000	4.00000000	0.00020000	2.00000000	0.00030000	3.00000000	0.00000000	0.00000000	1	3						
+																									
+comment	交易所期权手续费率设置到品种																								
+function	sys.initdb																								
+params	t_exchoptcommrate																								
+	TRADINGDAY	BROKERID	EXCHANGEID	INSTRUMENTID	HEDGEFLAG	OPENRATIOBYMONEY	OPENRATIOBYVOLUME	CLOSERATIOBYMONEY	CLOSERATIOBYVOLUME	CLOSETODAYRATIOBYMONEY	CLOSETODAYRATIOBYVOLUME	STRIKERATIOBYMONEY	STRIKERATIOBYVOLUME	PERFORMRATIOBYMONEY	PERFORMRATIOBYVOLUME	OPENCLOSERATIOBYMONEY	OPENCLOSERATIOBYVOLUME	VERSIONNO							
+	20180326	9999	CZCE    	SRC	1	0.00040000	4.00000000	0.00030000	3.00000000	0.00010000	1.00000000	0.00032000	3.20000000	0.00035000	3.50000000	0.00000000	0.00000000	2							
+	20180326	9999	CZCE    	SRC	3	0.00050000	5.00000000	0.00040000	4.00000000	0.00020000	2.00000000	0.00042000	4.20000000	0.00045000	4.50000000	0.00000000	0.00000000	2							
+	20180326	9999	CZCE    	SRP	1	0.00040000	4.00000000	0.00030000	3.00000000	0.00010000	1.00000000	0.00032000	3.20000000	0.00035000	3.50000000	0.00000000	0.00000000	1							
+	20180326	9999	CZCE    	SRP	3	0.00050000	5.00000000	0.00040000	4.00000000	0.00020000	2.00000000	0.00042000	4.20000000	0.00045000	4.50000000	0.00000000	0.00000000	1							
+	20180326	9999	CZCE    	PTAC	1	0.00040000	4.00000000	0.00030000	3.00000000	0.00010000	1.00000000	0.00032000	3.20000000	0.00035000	3.50000000	0.00000000	0.00000000	2.00000000							
+	20180326	9999	CZCE    	PTAC	3	0.00050000	5.00000000	0.00040000	4.00000000	0.00020000	2.00000000	0.00042000	4.20000000	0.00045000	4.50000000	0.00000000	0.00000000	2.00000000							
+	20180326	9999	CZCE    	PTAP	1	0.00040000	4.00000000	0.00030000	3.00000000	0.00010000	1.00000000	0.00032000	3.20000000	0.00035000	3.50000000	0.00000000	0.00000000	1.00000000							
+	20180326	9999	CZCE    	PTAP	3	0.00050000	5.00000000	0.00040000	4.00000000	0.00020000	2.00000000	0.00042000	4.20000000	0.00045000	4.50000000	0.00000000	0.00000000	1.00000000							
+																									
+comment	投资者期权续费率设置到单一投资者																								
+function	sys.initdb																								
+params	t_invstoptcommrate																								
+	TRADINGDAY	BROKERID	EXCHANGEID	INSTRUMENTID	INVESTORRANGE	INVESTUNITID	INVESTORID	HEDGEFLAG	OPENRATIOBYMONEY	OPENRATIOBYVOLUME	CLOSERATIOBYMONEY	CLOSERATIOBYVOLUME	CLOSETODAYRATIOBYMONEY	CLOSETODAYRATIOBYVOLUME	STRIKERATIOBYMONEY	STRIKERATIOBYVOLUME	PERFORMRATIOBYMONEY	PERFORMRATIOBYVOLUME	OPENCLOSERATIOBYMONEY	OPENCLOSERATIOBYVOLUME	VERSIONNO				
+	20180326	9999	CZCE    	SRC	3	6001	6001	1	0.00050000	5.00000000	0.00040000	4.00000000	0.00020000	2.00000000	0.00042000	4.20000000	0.00045000	4.50000000	0.00000000	0.00000000	2				
+	20180326	9999	CZCE    	SRP	3	6001	6001	1	0.00050000	5.00000000	0.00040000	4.00000000	0.00020000	2.00000000	0.00042000	4.20000000	0.00045000	4.50000000	0.00000000	0.00000000	1				
+	20180326	9999	CZCE    	PTAC	3	6001	6001	1	0.00050000	5.00000000	0.00040000	4.00000000	0.00020000	2.00000000	0.00042000	4.20000000	0.00045000	4.50000000	0.00000000	0.00000000	2.00000000				
+	20180326	9999	CZCE    	PTAP	3	6001	6001	1	0.00050000	5.00000000	0.00040000	4.00000000	0.00020000	2.00000000	0.00042000	4.20000000	0.00045000	4.50000000	0.00000000	0.00000000	1.00000000				
+																									
+comment	交易所结算参数 只导入结算的交易所数据																								
+function	sys.initdb																								
+params	t_exchangesettleparam																								
+	BROKERID	EXCHANGEID	SETTLEMENTPARAMID	SETTLEMENTPARAMVALUE	MEMO	OPERATORID	OPDATE	OPTIME																	
+	9999	CZCE    	A	1                                                                                                                                                                                                                                                              	郑商所组合持仓保证金收取方式:按高腿收取保证金                                                                                                                   		20171122	10:00:10																	
+	9999excel插入一行文本变化测试																								
+	9999	CZCE    	c	3                                                                                                                                                                                                                                                              	期权行权和期货开仓都收取                                                                                                                                        		20180514	15:32:02																	
+	9999	CZCE    	a	0.5                                                                                                                                                                                                                                                            			20190314	09:19:03																	
+	9999	CZCE    	b	0.5                                                                                                                                                                                                                                                            			20190314	09:19:10																	
+	9999	CZCE    	0	0                                                                                                                                                                                                                                                              	到期交割投资者交割手续费收取方式:最后交易日收取                                                                                                                 		20180917	14:47:35																	
+	9999	CZCE    	7	0                                                                                                                                                                                                                                                              	郑商所结算方式:通过上传交易所下发文件结算，以交易所结果为准                                                                                                     		20180917	15:33:41																	
+	9999	CZCE    	9	0                                                                                                                                                                                                                                                              	到期交割交易所交割手续费收取方式:最后交易日收取                                                                                                                 		20180917	14:47:26																	
+comment	9999	DCE    	a	0.5			20190314	09:19:03																	
+comment	9999	DCE  	b	0.5			20190314	09:19:10																	
+comment	9999	SHFE    	a	0.5			20190314	09:19:03																	
+comment	9999	SHFE    	b	0.5                                                                                                                                                                                                                                                            			20190314	09:19:10																	
+comment	9999	CFFEX    	a	0.5			20190314	09:19:03																	
+comment	9999	CFFEX 	b	0.5			20190314	09:19:10																	
+																									
+comment	投资者结算参数																								
+function	sys.initdb																								
+params	t_investorsettleparam																								
+	BROKERID	INVESTORRANGE	INVESTORID	CURRENCYID	ACCOUNTID	SETTLEMENTPARAMID	SETTLEMENTPARAMVALUE	MEMO	OPERATORID	OPDATE	OPTIME														
+	9999	3	6001	CNY	6001	1	1000.0                                                                                                                                                                                                                                                         																		
+	9999	3	6001	CNY	6001	2	2000                                                                                                                                                                                                                                                           																		
+	9999	3	6001	HKD	6001	1	0																		
+	9999	3	6001	HKD	6001	2	0																		
+	9999	3	6001	USD	6001	1	0																		
+	9999	3	6001	USD	6001	2	0																		
+	9999	3	6001	CNY	6001	5	1	郑州锁仓保证金 1：单边收取																	
+																									
+function	sys.initdb																								
+params	t_product																								
+	EXCHANGEID	PRODUCTID	COMMODITYID	PRODUCTNAME	PRODUCTCLASS	PRODUCTLIFEPHASE	CURRENCYID	QUOTECURRENCYID	POSITIONMODE	POSITIONDATETYPE	PRICEDECIMAL	DELIVMODE	DELIVUNIT	PCTDELIVTYPE	STRIKEMODE	VERSIONNO									
+	CZCE	SR	SR	白砂糖              	1	1	CNY	CNY	2	2	1	2		1	0	2									
+	CZCE	SRC	SR	白糖期权            	2	1	CNY	CNY	2	2	1	2		1	1	1									
+	CZCE	SRP	SR	白糖期权SRP         	2	1	CNY	CNY	2	2	1	2		1	1	1									
+	CZCE	PTAC	PTA	精对苯二甲酸期权	2	2	CNY	CNY	2	2	1	2		1	1	1									
+	CZCE	PTAP	PTA	精对苯二甲酸期权	2	3	CNY	CNY	2	2	1	2		1	1	1									
+	CZCE	OI	OI	菜油                	1	1	CNY	CNY	2	1	1	2		1	0	1									
+	CZCE	PTA	PTA	精对苯二甲酸        	1	1	CNY	CNY	2	1	2	2		1	0	1									
+																									
+function	sys.initdb																								
+params	t_productattr																								
+	EXCHANGEID	PRODUCTID	VOLUMEMULTIPLE	MAXMARKETORDERVOLUME	MINMARKETORDERVOLUME	MAXLIMITORDERVOLUME	MINLIMITORDERVOLUME	PRICETICK	UNDERLYINGMULTIPLE	VERSIONNO															
+	CZCE	SR	10	100	1	100	1	5.0000000000		2															
+	CZCE	SRC	10	1000	1	1000	1	1.0000000000	1.00000000	1															
+	CZCE	SRP	10	1000	1	1000	1	1.0000000000	1.00000000	1															
+	CZCE	PTAC	5	100	1	100	1	5	0	1															
+	CZCE	PTAP	5	100	1	100	1	5	0	1															
+	CZCE	OI	10	100	1	100	1	5.0000000000		1															
+	CZCE	PTA	5	100	1	100	1	5.0000000000		1															
+																									
+function	sys.initdb																								
+params	t_futinstrument																								
+	INSTRUMENTID	INSTRUMENTNAME	EXCHANGEID	PRODUCTID	CREATEDATE	OPENDATE	EXPIREDATE	DELIVERYYEAR	DELIVERYMONTH	STARTDELIVDATE	ENDDELIVDATE	DELISTINGDATE	BASISPRICE	VOLUMEMULTIPLE	INSTLIFEPHASE										
+	SR807	白糖7月             	CZCE	SR                            	20170117	20170117	20180328	2018	7	20180713	20180713	20180915	0.0000000000	10	1										
+	SR809	白砂糖809           	CZCE	SR                            	20180108	20170901	20180333	2018	9	20180915	20180915	20180915	23545.0000000000	10	1										
+	OI811	菜油811             	CZCE	OI                            	20180108	20171101	20180333	2018	11	20181115	20181115	20181115	1242.0000000000	10	1										
+	PTA807	精对苯二甲酸807     	CZCE	PTA                           	20180108	20170701	20180328	2018	7	20180114	20180114	20180114	123.0000000000	5	1										
+	PTA809	精对苯二甲酸809     	CZCE	PTA                           	20180108	20170901	20180333	2018	9	20180915	20180915	20180915	1243.0000000000	5	1										
+																									
+function	sys.initdb																								
+params	t_optinstrument																								
+	INSTRUMENTID	INSTRUMENTNAME	EXCHANGEID	PRODUCTID	CREATEDATE	OPENDATE	EXPIREDATE	DELIVERYYEAR	DELIVERYMONTH	STARTDELIVDATE	ENDDELIVDATE	DELISTINGDATE	BASISPRICE	OPTIONSTYPE	STRIKEPRICE	TARGETINSTRID	UNDERLYINGMULTIPLE	VOLUMEMULTIPLE	INSTLIFEPHASE						
+	SR807C6500	白糖807买权         	CZCE	SRC	20170118	20170118	20180327	2018	3	20180525	20180525		0.0000000000	1	6500.0000000000	SR807	1.00000000	10	1						
+	SR807P6500	白糖807卖权         	CZCE	SRP	20170118	20170118	20180327	2018	3	20180525	20180525		0.0000000000	2	6500.0000000000	SR807	1.00000000	10	1						
+	SR807P6400	白糖期权SRP807P6400 	CZCE	SRP	20180108	20170809	20180327	2018	7	20180813	20180813	20180813	4.0000000000	2	6400.0000000000	SR807	1.00000000	10	1						
+	SR809C6500	白糖期权809C6500    	CZCE	SRC	20180108	20170801	20180327	2018	9	20180915	20180915	20180915	235.0000000000	1	6500.0000000000	SR809	1.00000000	10	1						
+	SR809C6600	白糖期权809C6600	CZCE	SRC	20180108	20170801	20180332	2018	9	20180915	20180915	20180915	236.0000000000	1	6600.0000000000	SR809	1.00000000	10	1						
+	PTA807C6500	精对苯二甲酸807 	CZCE	PTAC	20170118	20170801	20180328	2018	3	20180525	20180525	0	0	1	6500.0000000000	PTA807	1.00000000	5	1						
+	PTA807P6200	精对苯二甲酸807 	CZCE	PTAP	20170118	20170801	20180328	2018	3	20180525	20180525	0	0	2	6200.0000000000	PTA807	1.00000000	5	1						
+	PTA807P6500	精对苯二甲酸807 	CZCE	PTAP	20170119	20170801	20180328	2018	7	20180813	20180813	20180813	4	2	6500.0000000000	PTA807	1.00000000	5	1						
+																									
+function	sys.initdb																								
+params	t_instrumenttradeattr																								
+	INSTRUMENTID	EXCHANGEID	MAXMARKETORDERVOLUME	MINMARKETORDERVOLUME	MAXLIMITORDERVOLUME	MINLIMITORDERVOLUME	ISTRADING	PRICETICK	PRICEDECIMAL																
+	SR807	CZCE	1000	1	1000	1	1	1.00 	2																
+	SR809	CZCE	100	1	100	1	1	5.00 	1																
+	OI811	CZCE	100	1	100	1	1	5.00 	1																
+	PTA807	CZCE	100	1	100	1	1	5.00 	2																
+	PTA809	CZCE	100	1	100	1	1	5.00 	2																
+	SR807C6500	CZCE	20	1	20	1	1	0.50 	2																
+	SR807P6500	CZCE	20	1	20	1	1	0.50 	2																
+	SR807P6400	CZCE	1000	1	1000	1	1	1.00 	1																
+	SR809C6500	CZCE	1000	1	1000	1	1	1.00 	1																
+	PTA807C6500	CZCE	100	1	100	1	1	5.00 	2																
+	PTA807P6200	CZCE	100	1	100	1	1	5.00 	2																
+	PTA807P6500	CZCE	100	1	100	1	1	5.00 	2																
+comment	产品分段																								
+function	sys.initdb																								
+params	t_productliferule																								
+	BROKERID	EXCHANGEID	PRODUCTID	BEGINDATEEXPR	BEGINDATEEXPRNAME	SEQUENCEID	EXPRSETMODE	RELATEDATEEXPR	OPERATORID	OPERATEDATE	OPERATETIME														
+	9999	CZCE	SR	OPN-000<001TRA	上市月前0月前1交易日	1	2		0000_admin                                                      	20190326	10:51:04														
+	9999	CZCE	OI	OPN-000<001TRA	上市月前0月前1交易日	1	2		0000_admin                                                      	20190326	10:50:53														
+	9999	CZCE	PTA	OPN-000<001TRA	上市月前0月前1交易日	1	2		0000.0000_admin                                                 	20190326	10:51:20														
+																									
+function	sys.initdb																								
+params	t_instrumentexprdate																								
+	BROKERID	EXCHANGEID	PRODUCTID	BEGINDATEEXPR	INSTRUMENTID	BEGINDATE																			
+	9999	CZCE	SR	OPN-000<001TRA	SR807	20161230																			
+	9999	CZCE	SR	OPN-000<001TRA	SR809	20170831																			
+	9999	CZCE	OI	OPN-000<001TRA	OI811	20170630																			
+	9999	CZCE	PTA	OPN-000<001TRA	PTA807	20170831																			
+	9999	CZCE	PTA	OPN-000<001TRA	PTA809	20171031																			
+																									
+comment	交易所期货保证金率属性交易所设置到产品级别																								
+function	sys.initdb																								
+params	t_exchfutmarginrate																								
+	BROKERID	EXCHANGEID	INSTRUMENTID	BEGINDATEEXPR	HEDGEFLAG	LONGMARGINRATIOBYMONEY	LONGMARGINRATIOBYVOLUME	SHORTMARGINRATIOBYMONEY	SHORTMARGINRATIOBYVOLUME	VERSIONNO															
+	9999	CZCE	SR	OPN-000<001TRA	1	0.04000000	4.00000000	0.04100000	4.10000000	12															
+	9999	CZCE	SR	OPN-000<001TRA	2	0.04000000	4.00000000	0.04100000	4.10000000	12															
+	9999	CZCE	SR	OPN-000<001TRA	3	0.04200000	4.20000000	0.04300000	4.30000000	12															
+	9999	CZCE	SR	OPN-000<001TRA	4	0.04200000	4.20000000	0.04300000	4.30000000	12															
+	9999	CZCE	OI	OPN-000<001TRA	1	0.04000000	4.00000000	0.04100000	4.10000000	1															
+	9999	CZCE	OI	OPN-000<001TRA	2	0.04000000	4.00000000	0.04100000	4.10000000	1															
+	9999	CZCE	OI	OPN-000<001TRA	3	0.04200000	4.20000000	0.04300000	4.30000000	1															
+	9999	CZCE	OI	OPN-000<001TRA	4	0.04200000	4.20000000	0.04300000	4.30000000	1															
+	9999	CZCE	PTA	OPN-000<001TRA	1	0.04000000	4.00000000	0.04100000	4.10000000	1															
+	9999	CZCE	PTA	OPN-000<001TRA	2	0.04000000	4.00000000	0.04100000	4.10000000	1															
+	9999	CZCE	PTA	OPN-000<001TRA	3	0.04200000	4.20000000	0.04300000	4.30000000	1															
+	9999	CZCE	PTA	OPN-000<001TRA	4	0.04200000	4.20000000	0.04300000	4.30000000	1															
+																									
+comment	当前交易所期货保证金率																								
+function	sys.initdb																								
+params	t_currexchfutmarginrate																								
+	TRADINGDAY	BROKERID	EXCHANGEID	INSTRUMENTID	RATIOATTR	HEDGEFLAG	LONGMARGINRATIOBYMONEY	LONGMARGINRATIOBYVOLUME	SHORTMARGINRATIOBYMONEY	SHORTMARGINRATIOBYVOLUME	SOURCEBEGINDATEEXPR	VERSIONNO													
+	20180326	9999	CZCE	SR	1	1	0.04000000	4.00000000	0.04100000	4.10000000	OPN-000<001TRA	1													
+	20180326	9999	CZCE	SR	1	2	0.04000000	4.00000000	0.04100000	4.10000000	OPN-000<001TRA	1													
+	20180326	9999	CZCE	SR	1	3	0.04200000	4.20000000	0.04300000	4.30000000	OPN-000<001TRA	1													
+	20180326	9999	CZCE	SR	1	4	0.04200000	4.20000000	0.04300000	4.30000000	OPN-000<001TRA	1													
+	20180326	9999	CZCE	SR807	1	1	0.04000000	4.00000000	0.04100000	4.10000000	OPN-000<001TRA	1													
+	20180326	9999	CZCE	SR807	1	2	0.04000000	4.00000000	0.04100000	4.10000000	OPN-000<001TRA	1													
+	20180326	9999	CZCE	SR807	1	3	0.04200000	4.20000000	0.04300000	4.30000000	OPN-000<001TRA	1													
+	20180326	9999	CZCE	SR807	1	4	0.04200000	4.20000000	0.04300000	4.30000000	OPN-000<001TRA	1													
+	20180326	9999	CZCE	SR809	1	1	0.04000000	4.00000000	0.04100000	4.10000000	OPN-000<001TRA	1													
+	20180326	9999	CZCE	SR809	1	2	0.04000000	4.00000000	0.04100000	4.10000000	OPN-000<001TRA	1													
+	20180326	9999	CZCE	SR809	1	3	0.04200000	4.20000000	0.04300000	4.30000000	OPN-000<001TRA	1													
+	20180326	9999	CZCE	SR809	1	4	0.04200000	4.20000000	0.04300000	4.30000000	OPN-000<001TRA	1													
+	20180326	9999	CZCE	OI	1	1	0.04000000	4.00000000	0.04100000	4.10000000	OPN-000<001TRA	1													
+	20180326	9999	CZCE	OI	1	2	0.04000000	4.00000000	0.04100000	4.10000000	OPN-000<001TRA	1													
+	20180326	9999	CZCE	OI	1	3	0.04200000	4.20000000	0.04300000	4.30000000	OPN-000<001TRA	1													
+	20180326	9999	CZCE	OI	1	4	0.04200000	4.20000000	0.04300000	4.30000000	OPN-000<001TRA	1													
+	20180326	9999	CZCE	OI811	1	1	0.04000000	4.00000000	0.04100000	4.10000000	OPN-000<001TRA	1													
+	20180326	9999	CZCE	OI811	1	2	0.04000000	4.00000000	0.04100000	4.10000000	OPN-000<001TRA	1													
+	20180326	9999	CZCE	OI811	1	3	0.04200000	4.20000000	0.04300000	4.30000000	OPN-000<001TRA	1													
+	20180326	9999	CZCE	OI811	1	4	0.04200000	4.20000000	0.04300000	4.30000000	OPN-000<001TRA	1													
+	20180326	9999	CZCE	PTA	1	1	0.04000000	4.00000000	0.04100000	4.10000000	OPN-000<001TRA	1													
+	20180326	9999	CZCE	PTA	1	2	0.04000000	4.00000000	0.04100000	4.10000000	OPN-000<001TRA	1													
+	20180326	9999	CZCE	PTA	1	3	0.04200000	4.20000000	0.04300000	4.30000000	OPN-000<001TRA	1													
+	20180326	9999	CZCE	PTA	1	4	0.04200000	4.20000000	0.04300000	4.30000000	OPN-000<001TRA	1													
+	20180326	9999	CZCE	PTA807	1	1	0.04000000	4.00000000	0.04100000	4.10000000	OPN-000<001TRA	1													
+	20180326	9999	CZCE	PTA807	1	2	0.04000000	4.00000000	0.04100000	4.10000000	OPN-000<001TRA	1													
+	20180326	9999	CZCE	PTA807	1	3	0.04200000	4.20000000	0.04300000	4.30000000	OPN-000<001TRA	1													
+	20180326	9999	CZCE	PTA807	1	4	0.04200000	4.20000000	0.04300000	4.30000000	OPN-000<001TRA	1													
+	20180326	9999	CZCE	PTA809	1	1	0.04000000	4.00000000	0.04100000	4.10000000	OPN-000<001TRA	1													
+	20180326	9999	CZCE	PTA809	1	2	0.04000000	4.00000000	0.04100000	4.10000000	OPN-000<001TRA	1													
+	20180326	9999	CZCE	PTA809	1	3	0.04200000	4.20000000	0.04300000	4.30000000	OPN-000<001TRA	1													
+	20180326	9999	CZCE	PTA809	1	4	0.04200000	4.20000000	0.04300000	4.30000000	OPN-000<001TRA	1													
+																									
+comment	投资者期货保证金率属性设置到投资者级别																								
+function	sys.initdb																								
+params	t_invstfutmarginrate																								
+	BROKERID	EXCHANGEID	INSTRUMENTID	INVESTORRANGE	INVESTORID	INVESTUNITID	BEGINDATEEXPR	HEDGEFLAG	LONGMARGINRATIOBYMONEY	LONGMARGINRATIOBYVOLUME	SHORTMARGINRATIOBYMONEY	SHORTMARGINRATIOBYVOLUME	ISRELATIVE	VERSIONNO											
+	9999	CZCE	SR	3	6001	6001	OPN-000<001TRA	1	0.05000000	5.00000000	0.05100000	5.10000000	0	1											
+	9999	CZCE	SR	3	6001	6001	OPN-000<001TRA	2	0.05000000	5.00000000	0.05100000	5.10000000	0	1											
+	9999	CZCE	SR	3	6001	6001	OPN-000<001TRA	3	0.05200000	5.20000000	0.05300000	5.30000000	0	1											
+	9999	CZCE	SR	3	6001	6001	OPN-000<001TRA	4	0.05000000	5.00000000	0.05100000	5.10000000	0	1											
+	9999	CZCE	OI	3	6001	6001	OPN-000<001TRA	1	0.05000000	5.00000000	0.05100000	5.10000000	0	1											
+	9999	CZCE	OI	3	6001	6001	OPN-000<001TRA	2	0.05000000	5.00000000	0.05100000	5.10000000	0	1											
+	9999	CZCE	OI	3	6001	6001	OPN-000<001TRA	3	0.05200000	5.20000000	0.05300000	5.30000000	0	1											
+	9999	CZCE	OI	3	6001	6001	OPN-000<001TRA	4	0.05000000	5.00000000	0.05100000	5.10000000	0	1											
+	9999	CZCE	PTA	3	6001	6001	OPN-000<001TRA	1	0.05000000	5.00000000	0.05100000	5.10000000	0	1											
+	9999	CZCE	PTA	3	6001	6001	OPN-000<001TRA	2	0.05000000	5.00000000	0.05100000	5.10000000	0	1											
+	9999	CZCE	PTA	3	6001	6001	OPN-000<001TRA	3	0.05200000	5.20000000	0.05300000	5.30000000	0	1											
+	9999	CZCE	PTA	3	6001	6001	OPN-000<001TRA	4	0.05000000	5.00000000	0.05100000	5.10000000	0	1											
+																									
+comment	当前投资者期货合约保证金率																								
+function	sys.initdb																								
+params	t_currinvstfutmarginrate																								
+	TRADINGDAY	BROKERID	EXCHANGEID	INSTRUMENTID	INVESTORRANGE	INVESTORID	INVESTUNITID	RATIOATTR	HEDGEFLAG	LONGMARGINRATIOBYMONEY	LONGMARGINRATIOBYVOLUME	SHORTMARGINRATIOBYMONEY	SHORTMARGINRATIOBYVOLUME	ISRELATIVE	SOURCEBEGINDATEEXPR	VERSIONNO									
+	20180326	9999	CZCE	SR	3	6001	6001	1	1	0.05000000	5.00000000	0.05100000	5.10000000	0	OPN-000<001TRA	1									
+	20180326	9999	CZCE	SR	3	6001	6001	1	2	0.05000000	5.00000000	0.05100000	5.10000000	0	OPN-000<001TRA	1									
+	20180326	9999	CZCE	SR	3	6001	6001	1	3	0.05200000	5.20000000	0.05300000	5.30000000	0	OPN-000<001TRA	1									
+	20180326	9999	CZCE	SR	3	6001	6001	1	4	0.05000000	5.00000000	0.05100000	5.10000000	0	OPN-000<001TRA	1									
+	20180326	9999	CZCE	OI	3	6001	6001	1	1	0.05000000	5.00000000	0.05100000	5.10000000	0	OPN-000<001TRA	1									
+	20180326	9999	CZCE	OI	3	6001	6001	1	2	0.05000000	5.00000000	0.05100000	5.10000000	0	OPN-000<001TRA	1									
+	20180326	9999	CZCE	OI	3	6001	6001	1	3	0.05200000	5.20000000	0.05300000	5.30000000	0	OPN-000<001TRA	1									
+	20180326	9999	CZCE	OI	3	6001	6001	1	4	0.05000000	5.00000000	0.05100000	5.10000000	0	OPN-000<001TRA	1									
+	20180326	9999	CZCE	PTA	3	6001	6001	1	1	0.05000000	5.00000000	0.05100000	5.10000000	0	OPN-000<001TRA	1									
+	20180326	9999	CZCE	PTA	3	6001	6001	1	2	0.05000000	5.00000000	0.05100000	5.10000000	0	OPN-000<001TRA	1									
+	20180326	9999	CZCE	PTA	3	6001	6001	1	3	0.05200000	5.20000000	0.05300000	5.30000000	0	OPN-000<001TRA	1									
+	20180326	9999	CZCE	PTA	3	6001	6001	1	4	0.05000000	5.00000000	0.05100000	5.10000000	0	OPN-000<001TRA	1									
+																									
+comment	期权标的合约保证金率调整设置到投资者级别																								
+function	sys.initdb																								
+params	t_invstoptmarginrateul																								
+	TRADINGDAY	BROKERID	EXCHANGEID	INSTRUMENTID	INVESTORRANGE	INVESTORID	INVESTUNITID	RATIOATTR	HEDGEFLAG	LONGMARGINRATIOBYMONEY	LONGMARGINRATIOBYVOLUME	SHORTMARGINRATIOBYMONEY	SHORTMARGINRATIOBYVOLUME	VERSIONNO											
+	20180326	9999	CZCE	SR	3	6001	6001	1	1	0.01000000	1.00000000	0.01100000	1.11000000	1											
+	20180326	9999	CZCE	SR	3	6001	6001	1	2	0.01000000	1.00000000	0.01100000	1.11000000	1											
+	20180326	9999	CZCE	SR	3	6001	6001	1	3	0.01200000	1.12000000	0.01300000	1.13000000	1											
+	20180326	9999	CZCE	SR	3	6001	6001	1	4	0.01000000	1.00000000	0.01100000	1.11000000	1											
+	20180326	9999	CZCE	OI	3	6001	6001	1	1	0.01000000	1.00000000	0.01100000	1.11000000	1											
+	20180326	9999	CZCE	OI	3	6001	6001	1	2	0.01000000	1.00000000	0.01100000	1.11000000	1											
+	20180326	9999	CZCE	OI	3	6001	6001	1	3	0.01200000	1.12000000	0.01300000	1.13000000	1											
+	20180326	9999	CZCE	OI	3	6001	6001	1	4	0.01000000	1.00000000	0.01100000	1.11000000	1											
+	20180326	9999	CZCE	PTA	3	6001	6001	1	1	0.01000000	1.00000000	0.01100000	1.11000000	1											
+	20180326	9999	CZCE	PTA	3	6001	6001	1	2	0.01000000	1.00000000	0.01100000	1.11000000	1											
+	20180326	9999	CZCE	PTA	3	6001	6001	1	3	0.01200000	1.12000000	0.01300000	1.13000000	1											
+	20180326	9999	CZCE	PTA	3	6001	6001	1	4	0.01000000	1.00000000	0.01100000	1.11000000	1											
+																									
+function	sys.initdb																								
+params	t_invstfutsettlecommrate																								
+	TRADINGDAY	EXCHANGEID	INSTRUMENTID	INVESTORRANGE	BROKERID	INVESTORID	INVESTUNITID	SETTLERATIOBYMONEY	SETTLERATIOBYVOLUME	HEDGEFLAG	VERSIONNO														
+	20180326	CZCE    	SR	3	9999	6001	6001	0.00020000	2.00000000	1	1														
+	20180326	CZCE    	OI	3	9999	6001	6001	0.00020000	2.00000000	1	1														
+	20180326	CZCE    	PTA	3	9999	6001	6001	0.00020000	2.00000000	1	1														
+																									
+function	sys.initdb																								
+params	t_invstoptsettlecommrate																								
+	TRADINGDAY	BROKERID	EXCHANGEID	INSTRUMENTID	INVESTORRANGE	INVESTUNITID	INVESTORID	HEDGEFLAG	SETTLERATIOBYMONEY	SETTLERATIOBYVOLUME	VERSIONNO														
+	20180326	9999	CZCE    	SRC	3	6001	6001	1	0.00020000	2.00000000	1														
+	20180326	9999	CZCE    	SRP	3	6001	6001	1	0.00020000	2.00000000	1														
+	20180326	9999	CZCE    	PTAC	3	6001	6001	1	0.00020000	2.00000000	1														
+	20180326	9999	CZCE    	PTAP	3	6001	6001	1	0.00020000	2.00000000	1														
+																									
+function	sys.initdb																								
+params	T_SPECDEALPRODUCT																								
+	EXCHANGEID	PRODUCTID	PRODUCTNAME	PRODUCTCLASS	CLOSEDEALTYPE	SPECPRODUCTTYPE	MORTGAGEFUNDUSERANGE	CURRENCYID	QUOTECURRENCYID	PRODUCTGROUPID															
+	CZCE    	PTA	精对苯二甲酸        	1	0	2		CNY																	
+																									
+function	sys.initdb																								
+params	T_EXCHANGERATE																								
+	TRADINGDAY	BROKERID	EXCHANGEID	FROMCURRENCYID	FROMCURRENCYUNIT	TOCURRENCYID	EXCHANGERATE																		
+	20180326	9999	INE     	CNY	1.00000000	USD	0.13450000																		
+	20180326	9999	INE     	CNY	1.00000000	HKD	1.13380000																		
+	20180326	9999	INE     	HKD	1.00000000	CNY	0.88200000																		
+	20180326	9999	INE     	USD	1.00000000	CNY	6.12340000																		
+																									
+function	sys.initdb																								
+params	t_invstfundmortdiscount																								
+	BROKERID	EXCHANGEID	SOURCECURRENCYID	TARGETCURRENCYID	DISCOUNTRATE	MEMO																			
+	9999	INE     	USD	CNY	0.90000000																				
+	9999	INE     	HKD	CNY	0.90000000																				
+	9999	INE     	CNY	HKD	0.95000000																				
+	9999	INE     	CNY	USD	0.95000000																				
+																									
+function	sys.initdb																								
+params	t_fundmortgage																								
+	BROKERID	EXCHANGEID	SOURCECURRENCYID	TARGETCURRENCYID	DISCOUNTRATE	MEMO																			
+	9999	INE     	USD	CNY	0.80000000																				
+	9999	INE     	HKD	CNY	0.80000000																				
+	9999	INE     	CNY	HKD	0.85000000																				
+	9999	INE     	CNY	USD	0.85000000																				
+																									
+function	sys.initdb																								
+params	t_mortgage																								
+	BROKERID	MORTGAGEID	MORTGAGENAME	SETTLEMENTPRICE	PRICERANGE	DISCOUNTRATE	INTERESTRATE	MORTGAGEUNIT	MEMO	exchangeid															
+	9999	SR	SR	4000.0000000000	1.0000000000	1.00000000	1.00000000	1		CZCE															
+function	sys.read																								
+params	value																								
 	"
-select settlementdate  From t_settledate   where brokerid='0000' and exchangeid='0000'"																						
-return	settlementdate 																						
-	20180326																						
-																							
-comment	day2日期																						
-function	sys.read																						
-params	value																						
-	select min(day) day from  t_calendar t where t.day>(select settlementdate  From t_settledate   where brokerid='0000' and exchangeid='0000') and t.exchangeid='0000' and t.wrk='1'																						
-return	day																						
-	20180327																						
-																							
-comment	day3日期																						
-function	sys.read																						
-params	value																						
-	select min(day) day from  t_calendar t where t.day>(select min(day) day from  t_calendar t where t.day>(select settlementdate  From t_settledate   where brokerid='0000' and exchangeid='0000') and t.exchangeid='0000' and t.wrk='1')  and t.exchangeid='0000' and t.wrk='1'																						
-return	day																						
-	20180328																						
-																							
-function	sys.read																						
-params	value																						
-	select currentseqno From t_businessseq ta where ta.brokerid='9999' and ta.businesstype = 'O_InvestorFundChange'																						
-return	currentseqno																						
-	1																						
-function	sys.read																						
-params	value																						
-	select currentseqno From t_businessseq ta where ta.brokerid='9999' and ta.businesstype = 'O_ExchangeFundChange'																						
-return	currentseqno																						
-	1																						
+select settlementdate  From t_settledate   where brokerid='0000' and exchangeid='0000'"																								
+return	settlementdate 																								
+	20180326																								
+																									
+comment	day2日期																								
+function	sys.read																								
+params	value																								
+	select min(day) day from  t_calendar t where t.day>(select settlementdate  From t_settledate   where brokerid='0000' and exchangeid='0000') and t.exchangeid='0000' and t.wrk='1'																								
+return	day																								
+	20180327																								
+																									
+comment	day3日期																								
+function	sys.read																								
+params	value																								
+	select min(day) day from  t_calendar t where t.day>(select min(day) day from  t_calendar t where t.day>(select settlementdate  From t_settledate   where brokerid='0000' and exchangeid='0000') and t.exchangeid='0000' and t.wrk='1')  and t.exchangeid='0000' and t.wrk='1'																								
+return	day																								
+	20180328																								
+																									
+function	sys.read																								
+params	value																								
+	select currentseqno From t_businessseq ta where ta.brokerid='9999' and ta.businesstype = 'O_InvestorFundChange'																								
+return	currentseqno																								
+	1																								
+function	sys.read																								
+params	value																								
+	select currentseqno From t_businessseq ta where ta.brokerid='9999' and ta.businesstype = 'O_ExchangeFundChange'																								
+return	currentseqno																								
+	1																								
